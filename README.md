@@ -3,13 +3,17 @@
   <br>
   <a href="http://dual.sphysics.org/"><img src="http://design.sphysics.org/img/logo_dualsphysics.png" alt="DualSPHysics" width="300"></a>
   <br>
-  DualSPHysics
+  HIP Version of: DualSPHysics
   <br>
 </h1>
 
 <h4 align="center"><a href="http://www.dual.sphysics.org" target="_blank">DualSPHysics</a> is based on the Smoothed Particle Hydrodynamics model named <a href="http://www.sphysics.org" target="_blank">SPHysics</a>.</h4>
 
-<h4 align="center">The code is developed to study free-surface flow phenomena where Eulerian methods can be difficult to apply, such as waves or impact of dam-breaks on off-shore structures. DualSPHysics is a set of C++, <a href="https://developer.nvidia.com/cuda-zone" target="_blank">CUDA</a> and Java codes designed to deal with real-life engineering problems.</h4>
+<h4 align="center">The code is developed to study free-surface flow phenomena where Eulerian methods can be difficult to apply, such as waves or impact of dam-breaks on off-shore structures.</h4>
+
+<h4 align="center"> The original DualSPHysics is a set of C++, <a href="https://developer.nvidia.com/cuda-zone" target="_blank">CUDA</a> and Java codes designed to deal with real-life engineering problems.</h4>
+
+<h4 align="center"> This branch is an attempt to port DualSPHysics to <a href="https://rocm.docs.amd.com/projects/HIP/en/latest/" target="_blank">HIP</a> and run it on AMD GPUs.</h4>
 
 # Instructions for regular users
 
