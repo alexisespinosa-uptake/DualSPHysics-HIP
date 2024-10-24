@@ -1,3 +1,9 @@
+# This branch is the effort to translate code to use HIP
+
+<h4 align="center"> This branch is an attempt to port DualSPHysics to <a href="https://rocm.docs.amd.com/projects/HIP/en/latest/" target="_blank">HIP</a> and run it on AMD GPUs.</h4>
+
+<h4 align="center"> The original DualSPHysics repository is in <a href="https://github.com/DualSPHysics/DualSPHysics" target="_blank">DualSPHysics</a> and run it on AMD GPUs.</h4>
+
 
 <h1 align="center">
   <br>
@@ -13,7 +19,9 @@
 
 <h4 align="center"> The original DualSPHysics is a set of C++, <a href="https://developer.nvidia.com/cuda-zone" target="_blank">CUDA</a> and Java codes designed to deal with real-life engineering problems.</h4>
 
-<h4 align="center"> This branch is an attempt to port DualSPHysics to <a href="https://rocm.docs.amd.com/projects/HIP/en/latest/" target="_blank">HIP</a> and run it on AMD GPUs.</h4>
+# Note
+The rest of this document comes from the original readme file and has not been modified. So users need to read carefully and adapt instructions for the use of the code with HIP.
+
 
 # Instructions for regular users
 
