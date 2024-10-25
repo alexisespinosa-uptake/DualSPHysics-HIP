@@ -1,3 +1,4 @@
+#include "hip/hip_runtime.h"
 //HEAD_DSPH
 /*
  <DUALSPHYSICS>  Copyright (c) 2020 by Dr Jose M. Dominguez et al. (see http://dual.sphysics.org/index.php/developers/). 
@@ -29,7 +30,7 @@
 #include <string>
 
 //#include "TypesDef.h"
-//#include <cuda_runtime_api.h>
+//#include <hip/hip_runtime_api.h>
 
 namespace cugauge{
 #include "FunctionsBasic_iker.h"

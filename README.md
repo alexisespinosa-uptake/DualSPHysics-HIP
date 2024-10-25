@@ -19,6 +19,23 @@
 
 <h4 align="center"> The original DualSPHysics is a set of C++, <a href="https://developer.nvidia.com/cuda-zone" target="_blank">CUDA</a> and Java codes designed to deal with real-life engineering problems.</h4>
 
+# Procedure used for the translation from CUDA to HIP
+
+0. Load the needed modules. In our case:
+```
+module load rocm/5.6.1
+module load craype-accel-amd-gfx90a
+```
+
+1. Execute conversion command:
+```
+hipconvertinplace-perl.sh . 2>&1 | tee hipconvertinplace.out`
+```
+As the command says, the screen output of the perl script has been saved to the `hipconvertinplace.out` file.
+All the origial files with modifications are kept inplace put with the added suffix: `.prehip`.
+Files with now HIP content still kept the `.cu` extension.
+This conversion is still not functional, but a commit is done at this point.
+
 # Note
 The rest of this document comes from the original readme file and has not been modified. So users need to read carefully and adapt instructions for the use of the code with HIP.
 

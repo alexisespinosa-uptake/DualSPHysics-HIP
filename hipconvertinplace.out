@@ -1,0 +1,1235 @@
+
+[HIPIFY] info: file './src_mphase/DSPH_v5.0_NNewtonian/source/JRelaxZone_ker.cu' statistics:
+  CONVERTED refs count: 8
+  TOTAL lines of code: 511
+  WARNINGS: 0
+[HIPIFY] info: CONVERTED refs by names:
+  cudaFree => hipFree: 1
+  cudaMalloc => hipMalloc: 1
+
+[HIPIFY] info: file './src_mphase/DSPH_v5.0_NNewtonian/source/JWaveOrder2_ker.cu' statistics:
+  CONVERTED refs count: 5
+  TOTAL lines of code: 193
+  WARNINGS: 0
+[HIPIFY] info: CONVERTED refs by names:
+  cudaMemcpy => hipMemcpy: 1
+  cudaMemcpyDeviceToHost => hipMemcpyDeviceToHost: 1
+
+[HIPIFY] info: file './src_mphase/DSPH_v5.0_NNewtonian/source/JDsGauge_ker.cu' statistics:
+  CONVERTED refs count: 2
+  TOTAL lines of code: 401
+  WARNINGS: 0
+[HIPIFY] info: CONVERTED refs by names:
+  cuda_runtime_api.h => hip/hip_runtime_api.h: 1
+
+[HIPIFY] info: file './src_mphase/DSPH_v5.0_NNewtonian/source/JSphShifting_ker.cu' statistics:
+  CONVERTED refs count: 4
+  TOTAL lines of code: 170
+  WARNINGS: 0
+[HIPIFY] info: CONVERTED refs by names:
+  cudaStream_t => hipStream_t: 3
+
+[HIPIFY] info: file './src_mphase/DSPH_v5.0_NNewtonian/source/JCellDivGpu_ker.cu' statistics:
+  CONVERTED refs count: 25
+  TOTAL lines of code: 960
+  WARNINGS: 0
+[HIPIFY] info: CONVERTED refs by names:
+  cudaMemcpy => hipMemcpy: 12
+  cudaMemcpyDeviceToHost => hipMemcpyDeviceToHost: 8
+  cudaMemset => hipMemset: 2
+
+[HIPIFY] info: file './src_mphase/DSPH_v5.0_NNewtonian/source/JSphGpu_NN_ker.cu' statistics:
+  CONVERTED refs count: 8
+  TOTAL lines of code: 1555
+  WARNINGS: 0
+[HIPIFY] info: CONVERTED refs by names:
+  cudaMemcpyToSymbol => hipMemcpyToSymbol: 2
+
+[HIPIFY] info: file './src_mphase/DSPH_v5.0_NNewtonian/source/JDsAccInput_ker.cu' statistics:
+  CONVERTED refs count: 1
+  TOTAL lines of code: 133
+  WARNINGS: 0
+[HIPIFY] info: CONVERTED refs by names:
+  cudaStream_t => hipStream_t: 1
+
+[HIPIFY] info: file './src_mphase/DSPH_v5.0_NNewtonian/source/JSphGpuSimple_ker.cu' statistics:
+  CONVERTED refs count: 7
+  TOTAL lines of code: 450
+  WARNINGS: 0
+[HIPIFY] info: CONVERTED refs by names:
+  cudaStream_t => hipStream_t: 6
+
+[HIPIFY] info: file './src_mphase/DSPH_v5.0_NNewtonian/source/JSphGpu_InOut_iker.cu' statistics:
+  CONVERTED refs count: 19
+  TOTAL lines of code: 1915
+  WARNINGS: 0
+[HIPIFY] info: CONVERTED refs by names:
+  cudaMemcpy => hipMemcpy: 4
+  cudaMemcpyDeviceToHost => hipMemcpyDeviceToHost: 4
+  cudaMemset => hipMemset: 4
+
+[HIPIFY] info: file './src_mphase/DSPH_v5.0_NNewtonian/source/JReduSum_ker.cu' statistics:
+  CONVERTED refs count: 46
+  TOTAL lines of code: 700
+  WARNINGS: 0
+[HIPIFY] info: CONVERTED refs by names:
+  cudaMemcpy => hipMemcpy: 8
+  cudaMemcpyAsync => hipMemcpyAsync: 8
+  cudaMemcpyDeviceToDevice => hipMemcpyDeviceToDevice: 4
+  cudaMemcpyDeviceToHost => hipMemcpyDeviceToHost: 12
+  cudaStream_t => hipStream_t: 12
+
+[HIPIFY] info: file './src_mphase/DSPH_v5.0_NNewtonian/source/JSphGpu_ker.cu' statistics:
+  CONVERTED refs count: 37
+  TOTAL lines of code: 2846
+  WARNINGS: 0
+[HIPIFY] info: CONVERTED refs by names:
+  cudaFuncAttributes => hipFuncAttributes: 3
+  cudaFuncGetAttributes => hipFuncGetAttributes: 3
+  cudaMemcpy => hipMemcpy: 5
+  cudaMemcpyDeviceToHost => hipMemcpyDeviceToHost: 5
+  cudaMemcpyToSymbol => hipMemcpyToSymbol: 1
+  cudaMemset => hipMemset: 2
+  cudaOccupancyMaxPotentialBlockSize => hipOccupancyMaxPotentialBlockSize: 3
+  cudaStream_t => hipStream_t: 2
+
+[HIPIFY] info: file './src_mphase/DSPH_v5.0_NNewtonian/source/JDsPips_ker.cu' statistics:
+  CONVERTED refs count: 4
+  TOTAL lines of code: 279
+  WARNINGS: 0
+[HIPIFY] info: CONVERTED refs by names:
+  cudaStream_t => hipStream_t: 3
+
+[HIPIFY] info: file './src/source/JRelaxZone_ker.cu' statistics:
+  CONVERTED refs count: 8
+  TOTAL lines of code: 511
+  WARNINGS: 0
+[HIPIFY] info: CONVERTED refs by names:
+  cudaFree => hipFree: 1
+  cudaMalloc => hipMalloc: 1
+
+[HIPIFY] info: file './src/source/JWaveOrder2_ker.cu' statistics:
+  CONVERTED refs count: 5
+  TOTAL lines of code: 193
+  WARNINGS: 0
+[HIPIFY] info: CONVERTED refs by names:
+  cudaMemcpy => hipMemcpy: 1
+  cudaMemcpyDeviceToHost => hipMemcpyDeviceToHost: 1
+
+[HIPIFY] info: file './src/source/JDsGauge_ker.cu' statistics:
+  CONVERTED refs count: 2
+  TOTAL lines of code: 401
+  WARNINGS: 0
+[HIPIFY] info: CONVERTED refs by names:
+  cuda_runtime_api.h => hip/hip_runtime_api.h: 1
+
+[HIPIFY] info: file './src/source/JSphShifting_ker.cu' statistics:
+  CONVERTED refs count: 5
+  TOTAL lines of code: 170
+  WARNINGS: 0
+[HIPIFY] info: CONVERTED refs by names:
+  cudaStream_t => hipStream_t: 3
+
+[HIPIFY] info: file './src/source/JCellDivGpu_ker.cu' statistics:
+  CONVERTED refs count: 25
+  TOTAL lines of code: 960
+  WARNINGS: 0
+[HIPIFY] info: CONVERTED refs by names:
+  cudaMemcpy => hipMemcpy: 12
+  cudaMemcpyDeviceToHost => hipMemcpyDeviceToHost: 8
+  cudaMemset => hipMemset: 2
+
+[HIPIFY] info: file './src/source/JDsAccInput_ker.cu' statistics:
+  CONVERTED refs count: 1
+  TOTAL lines of code: 133
+  WARNINGS: 0
+[HIPIFY] info: CONVERTED refs by names:
+  cudaStream_t => hipStream_t: 1
+
+[HIPIFY] info: file './src/source/JSphGpuSimple_ker.cu' statistics:
+  CONVERTED refs count: 7
+  TOTAL lines of code: 450
+  WARNINGS: 0
+[HIPIFY] info: CONVERTED refs by names:
+  cudaStream_t => hipStream_t: 6
+
+[HIPIFY] info: file './src/source/JSphGpu_InOut_iker.cu' statistics:
+  CONVERTED refs count: 19
+  TOTAL lines of code: 1518
+  WARNINGS: 0
+[HIPIFY] info: CONVERTED refs by names:
+  cudaMemcpy => hipMemcpy: 4
+  cudaMemcpyDeviceToHost => hipMemcpyDeviceToHost: 4
+  cudaMemset => hipMemset: 4
+
+[HIPIFY] info: file './src/source/JReduSum_ker.cu' statistics:
+  CONVERTED refs count: 46
+  TOTAL lines of code: 700
+  WARNINGS: 0
+[HIPIFY] info: CONVERTED refs by names:
+  cudaMemcpy => hipMemcpy: 8
+  cudaMemcpyAsync => hipMemcpyAsync: 8
+  cudaMemcpyDeviceToDevice => hipMemcpyDeviceToDevice: 4
+  cudaMemcpyDeviceToHost => hipMemcpyDeviceToHost: 12
+  cudaStream_t => hipStream_t: 12
+
+[HIPIFY] info: file './src/source/JSphGpu_ker.cu' statistics:
+  CONVERTED refs count: 37
+  TOTAL lines of code: 3002
+  WARNINGS: 0
+[HIPIFY] info: CONVERTED refs by names:
+  cudaFuncAttributes => hipFuncAttributes: 3
+  cudaFuncGetAttributes => hipFuncGetAttributes: 3
+  cudaMemcpy => hipMemcpy: 5
+  cudaMemcpyDeviceToHost => hipMemcpyDeviceToHost: 5
+  cudaMemcpyToSymbol => hipMemcpyToSymbol: 1
+  cudaMemset => hipMemset: 2
+  cudaOccupancyMaxPotentialBlockSize => hipOccupancyMaxPotentialBlockSize: 3
+  cudaStream_t => hipStream_t: 2
+
+[HIPIFY] info: file './src/source/JDsPips_ker.cu' statistics:
+  CONVERTED refs count: 4
+  TOTAL lines of code: 279
+  WARNINGS: 0
+[HIPIFY] info: CONVERTED refs by names:
+  cudaStream_t => hipStream_t: 3
+
+[HIPIFY] info: file './src_mphase/DSPH_v5.0_NNewtonian/source/JArraysGpu.cpp' statistics:
+  CONVERTED refs count: 3
+  TOTAL lines of code: 234
+  WARNINGS: 0
+[HIPIFY] info: CONVERTED refs by names:
+  cudaFree => hipFree: 2
+  cudaMalloc => hipMalloc: 1
+
+[HIPIFY] info: file './src_mphase/DSPH_v5.0_NNewtonian/source/JRelaxZonesGpu.cpp' statistics:
+  CONVERTED refs count: 25
+  TOTAL lines of code: 274
+  WARNINGS: 0
+[HIPIFY] info: CONVERTED refs by names:
+  cudaFree => hipFree: 6
+  cudaMalloc => hipMalloc: 6
+  cudaMemcpy => hipMemcpy: 6
+  cudaMemcpyHostToDevice => hipMemcpyHostToDevice: 6
+  cuda_runtime_api.h => hip/hip_runtime_api.h: 1
+
+[HIPIFY] info: file './src_mphase/DSPH_v5.0_NNewtonian/source/JCellDivGpu.cpp' statistics:
+  CONVERTED refs count: 26
+  TOTAL lines of code: 460
+  WARNINGS: 0
+[HIPIFY] info: CONVERTED refs by names:
+  cudaError_t => hipError_t: 2
+  cudaFree => hipFree: 6
+  cudaGetLastError => hipGetLastError: 2
+  cudaMalloc => hipMalloc: 6
+  cudaMemcpy => hipMemcpy: 4
+  cudaMemcpyDeviceToHost => hipMemcpyDeviceToHost: 4
+  cudaSuccess => hipSuccess: 2
+
+[HIPIFY] info: file './src_mphase/DSPH_v5.0_NNewtonian/source/JSphInOutGridData.cpp' statistics:
+  CONVERTED refs count: 18
+  TOTAL lines of code: 594
+  WARNINGS: 0
+[HIPIFY] info: CONVERTED refs by names:
+  cudaFree => hipFree: 6
+  cudaMemcpy => hipMemcpy: 6
+  cudaMemcpyDeviceToDevice => hipMemcpyDeviceToDevice: 2
+  cudaMemcpyHostToDevice => hipMemcpyHostToDevice: 4
+
+[HIPIFY] info: file './src_mphase/DSPH_v5.0_NNewtonian/source/JDebugSphGpu.cpp' statistics:
+  CONVERTED refs count: 5
+  TOTAL lines of code: 284
+  WARNINGS: 0
+[HIPIFY] info: CONVERTED refs by names:
+  cudaError_t => hipError_t: 2
+  cudaGetErrorString => hipGetErrorString: 1
+  cudaGetLastError => hipGetLastError: 1
+  cudaSuccess => hipSuccess: 1
+
+[HIPIFY] info: file './src_mphase/DSPH_v5.0_NNewtonian/source/JFtMotionSave.cpp' statistics:
+  CONVERTED refs count: 8
+  TOTAL lines of code: 216
+  WARNINGS: 0
+[HIPIFY] info: CONVERTED refs by names:
+  cudaFree => hipFree: 2
+  cudaMalloc => hipMalloc: 2
+  cudaMemcpy => hipMemcpy: 2
+  cudaMemcpyDeviceToHost => hipMemcpyDeviceToHost: 1
+  cudaMemcpyHostToDevice => hipMemcpyHostToDevice: 1
+
+[HIPIFY] info: file './src_mphase/DSPH_v5.0_NNewtonian/source/FunctionsCuda.cpp' statistics:
+  CONVERTED refs count: 84
+  TOTAL lines of code: 707
+  WARNINGS: 0
+[HIPIFY] info: CONVERTED refs by names:
+  cudaDeviceCanAccessPeer => hipDeviceCanAccessPeer: 2
+  cudaDeviceProp => hipDeviceProp_t: 3
+  cudaDriverGetVersion => hipDriverGetVersion: 1
+  cudaError_t => hipError_t: 1
+  cudaGetDevice => hipGetDevice: 2
+  cudaGetDeviceCount => hipGetDeviceCount: 2
+  cudaGetDeviceProperties => hipGetDeviceProperties: 2
+  cudaGetErrorString => hipGetErrorString: 1
+  cudaGetLastError => hipGetLastError: 1
+  cudaHostAlloc => hipHostAlloc: 9
+  cudaHostAllocDefault => hipHostMallocDefault: 9
+  cudaMalloc => hipMalloc: 13
+  cudaMemcpy => hipMemcpy: 22
+  cudaMemcpyDeviceToHost => hipMemcpyDeviceToHost: 11
+  cudaRuntimeGetVersion => hipRuntimeGetVersion: 1
+  cudaSetDevice => hipSetDevice: 3
+  cudaSuccess => hipSuccess: 1
+
+[HIPIFY] info: file './src_mphase/DSPH_v5.0_NNewtonian/source/JDsGaugeItem.cpp' statistics:
+  CONVERTED refs count: 14
+  TOTAL lines of code: 1090
+  WARNINGS: 0
+[HIPIFY] info: CONVERTED refs by names:
+  cudaError_t => hipError_t: 2
+  cudaFree => hipFree: 2
+  cudaGetErrorString => hipGetErrorString: 1
+  cudaGetLastError => hipGetLastError: 1
+  cudaMemcpy => hipMemcpy: 3
+  cudaMemcpyDeviceToHost => hipMemcpyDeviceToHost: 3
+  cudaMemset => hipMemset: 1
+  cudaSuccess => hipSuccess: 1
+
+[HIPIFY] info: file './src_mphase/DSPH_v5.0_NNewtonian/source/JSphInOutZsurf.cpp' statistics:
+  CONVERTED refs count: 6
+  TOTAL lines of code: 445
+  WARNINGS: 0
+[HIPIFY] info: CONVERTED refs by names:
+  cudaFree => hipFree: 2
+  cudaMemcpy => hipMemcpy: 2
+  cudaMemcpyDeviceToHost => hipMemcpyDeviceToHost: 2
+
+[HIPIFY] info: file './src_mphase/DSPH_v5.0_NNewtonian/source/JDsGaugeSystem.cpp' statistics:
+  CONVERTED refs count: 1
+  TOTAL lines of code: 530
+  WARNINGS: 0
+[HIPIFY] info: CONVERTED refs by names:
+  cudaFree => hipFree: 1
+
+[HIPIFY] info: file './src_mphase/DSPH_v5.0_NNewtonian/source/JObjectGpu.cpp' statistics:
+  CONVERTED refs count: 10
+  TOTAL lines of code: 74
+  WARNINGS: 0
+[HIPIFY] info: CONVERTED refs by names:
+  cudaError_t => hipError_t: 4
+  cudaGetErrorString => hipGetErrorString: 2
+  cudaGetLastError => hipGetLastError: 2
+  cudaSuccess => hipSuccess: 2
+
+[HIPIFY] info: file './src_mphase/DSPH_v5.0_NNewtonian/source/JSphGpuSingle_InOut.cpp' statistics:
+  CONVERTED refs count: 14
+  TOTAL lines of code: 316
+  WARNINGS: 0
+[HIPIFY] info: CONVERTED refs by names:
+  cudaMemcpy => hipMemcpy: 6
+  cudaMemcpyHostToDevice => hipMemcpyHostToDevice: 6
+  cudaMemset => hipMemset: 2
+
+[HIPIFY] info: file './src_mphase/DSPH_v5.0_NNewtonian/source/JSphInOut.cpp' statistics:
+  CONVERTED refs count: 36
+  TOTAL lines of code: 1404
+  WARNINGS: 0
+[HIPIFY] info: CONVERTED refs by names:
+  cudaFree => hipFree: 12
+  cudaMemcpy => hipMemcpy: 12
+  cudaMemcpyHostToDevice => hipMemcpyHostToDevice: 12
+
+[HIPIFY] info: file './src_mphase/DSPH_v5.0_NNewtonian/source/JWaveSpectrumGpu.cpp' statistics:
+  CONVERTED refs count: 14
+  TOTAL lines of code: 106
+  WARNINGS: 0
+[HIPIFY] info: CONVERTED refs by names:
+  cudaFree => hipFree: 4
+  cudaMalloc => hipMalloc: 4
+  cudaMemcpy => hipMemcpy: 3
+  cudaMemcpyHostToDevice => hipMemcpyHostToDevice: 3
+
+[HIPIFY] info: file './src_mphase/DSPH_v5.0_NNewtonian/source/JSphShifting.cpp' statistics:
+  CONVERTED refs count: 3
+  TOTAL lines of code: 472
+  WARNINGS: 0
+[HIPIFY] info: CONVERTED refs by names:
+  cudaMemsetAsync => hipMemsetAsync: 1
+  cudaStream_t => hipStream_t: 2
+
+[HIPIFY] info: file './src_mphase/DSPH_v5.0_NNewtonian/source/JSphGpuSingle.cpp' statistics:
+  CONVERTED refs count: 27
+  TOTAL lines of code: 944
+  WARNINGS: 0
+[HIPIFY] info: CONVERTED refs by names:
+  cudaMemcpy => hipMemcpy: 13
+  cudaMemcpyDeviceToHost => hipMemcpyDeviceToHost: 8
+  cudaMemcpyHostToDevice => hipMemcpyHostToDevice: 5
+  cudaMemset => hipMemset: 1
+
+[HIPIFY] info: file './src_mphase/DSPH_v5.0_NNewtonian/source/JMLPistonsGpu.cpp' statistics:
+  CONVERTED refs count: 13
+  TOTAL lines of code: 132
+  WARNINGS: 0
+[HIPIFY] info: CONVERTED refs by names:
+  cudaFree => hipFree: 3
+  cudaMalloc => hipMalloc: 3
+  cudaMemcpy => hipMemcpy: 3
+  cudaMemcpyHostToDevice => hipMemcpyHostToDevice: 3
+  cuda_runtime_api.h => hip/hip_runtime_api.h: 1
+
+[HIPIFY] info: file './src_mphase/DSPH_v5.0_NNewtonian/source/JDsPips.cpp' statistics:
+  CONVERTED refs count: 2
+  TOTAL lines of code: 324
+  WARNINGS: 0
+[HIPIFY] info: CONVERTED refs by names:
+  cudaMemcpy => hipMemcpy: 1
+  cudaMemcpyDeviceToHost => hipMemcpyDeviceToHost: 1
+
+[HIPIFY] info: file './src_mphase/DSPH_v5.0_NNewtonian/source/JSphGpu.cpp' statistics:
+  CONVERTED refs count: 173
+  TOTAL lines of code: 1557
+  WARNINGS: 0
+[HIPIFY] info: CONVERTED refs by names:
+  cudaDeviceProp => hipDeviceProp_t: 1
+  cudaDeviceReset => hipDeviceReset: 1
+  cudaError_t => hipError_t: 4
+  cudaFree => hipFree: 17
+  cudaGetDevice => hipGetDevice: 1
+  cudaGetDeviceProperties => hipGetDeviceProperties: 1
+  cudaGetErrorString => hipGetErrorString: 2
+  cudaGetLastError => hipGetLastError: 2
+  cudaMalloc => hipMalloc: 18
+  cudaMemcpy => hipMemcpy: 55
+  cudaMemcpyDeviceToDevice => hipMemcpyDeviceToDevice: 3
+  cudaMemcpyDeviceToHost => hipMemcpyDeviceToHost: 33
+  cudaMemcpyHostToDevice => hipMemcpyHostToDevice: 19
+  cudaMemset => hipMemset: 13
+  cudaSetDevice => hipSetDevice: 1
+  cudaSuccess => hipSuccess: 2
+
+[HIPIFY] info: file './src/source/JArraysGpu.cpp' statistics:
+  CONVERTED refs count: 3
+  TOTAL lines of code: 240
+  WARNINGS: 0
+[HIPIFY] info: CONVERTED refs by names:
+  cudaFree => hipFree: 2
+  cudaMalloc => hipMalloc: 1
+
+[HIPIFY] info: file './src/source/JRelaxZonesGpu.cpp' statistics:
+  CONVERTED refs count: 25
+  TOTAL lines of code: 341
+  WARNINGS: 0
+[HIPIFY] info: CONVERTED refs by names:
+  cudaFree => hipFree: 6
+  cudaMalloc => hipMalloc: 6
+  cudaMemcpy => hipMemcpy: 6
+  cudaMemcpyHostToDevice => hipMemcpyHostToDevice: 6
+  cuda_runtime_api.h => hip/hip_runtime_api.h: 1
+
+[HIPIFY] info: file './src/source/JCellDivGpu.cpp' statistics:
+  CONVERTED refs count: 26
+  TOTAL lines of code: 463
+  WARNINGS: 0
+[HIPIFY] info: CONVERTED refs by names:
+  cudaError_t => hipError_t: 2
+  cudaFree => hipFree: 6
+  cudaGetLastError => hipGetLastError: 2
+  cudaMalloc => hipMalloc: 6
+  cudaMemcpy => hipMemcpy: 4
+  cudaMemcpyDeviceToHost => hipMemcpyDeviceToHost: 4
+  cudaSuccess => hipSuccess: 2
+
+[HIPIFY] info: file './src/source/JSphInOutGridData.cpp' statistics:
+  CONVERTED refs count: 18
+  TOTAL lines of code: 594
+  WARNINGS: 0
+[HIPIFY] info: CONVERTED refs by names:
+  cudaFree => hipFree: 6
+  cudaMemcpy => hipMemcpy: 6
+  cudaMemcpyDeviceToDevice => hipMemcpyDeviceToDevice: 2
+  cudaMemcpyHostToDevice => hipMemcpyHostToDevice: 4
+
+[HIPIFY] info: file './src/source/JDebugSphGpu.cpp' statistics:
+  CONVERTED refs count: 5
+  TOTAL lines of code: 284
+  WARNINGS: 0
+[HIPIFY] info: CONVERTED refs by names:
+  cudaError_t => hipError_t: 2
+  cudaGetErrorString => hipGetErrorString: 1
+  cudaGetLastError => hipGetLastError: 1
+  cudaSuccess => hipSuccess: 1
+
+[HIPIFY] info: file './src/source/JFtMotionSave.cpp' statistics:
+  CONVERTED refs count: 8
+  TOTAL lines of code: 216
+  WARNINGS: 0
+[HIPIFY] info: CONVERTED refs by names:
+  cudaFree => hipFree: 2
+  cudaMalloc => hipMalloc: 2
+  cudaMemcpy => hipMemcpy: 2
+  cudaMemcpyDeviceToHost => hipMemcpyDeviceToHost: 1
+  cudaMemcpyHostToDevice => hipMemcpyHostToDevice: 1
+
+[HIPIFY] info: file './src/source/FunctionsCuda.cpp' statistics:
+  CONVERTED refs count: 88
+  TOTAL lines of code: 738
+  WARNINGS: 0
+[HIPIFY] info: CONVERTED refs by names:
+  cudaDeviceCanAccessPeer => hipDeviceCanAccessPeer: 2
+  cudaDeviceProp => hipDeviceProp_t: 3
+  cudaDriverGetVersion => hipDriverGetVersion: 1
+  cudaError_t => hipError_t: 1
+  cudaGetDevice => hipGetDevice: 2
+  cudaGetDeviceCount => hipGetDeviceCount: 2
+  cudaGetDeviceProperties => hipGetDeviceProperties: 2
+  cudaGetErrorString => hipGetErrorString: 1
+  cudaGetLastError => hipGetLastError: 1
+  cudaHostAlloc => hipHostAlloc: 9
+  cudaHostAllocDefault => hipHostMallocDefault: 9
+  cudaMalloc => hipMalloc: 14
+  cudaMemcpy => hipMemcpy: 24
+  cudaMemcpyDeviceToHost => hipMemcpyDeviceToHost: 12
+  cudaRuntimeGetVersion => hipRuntimeGetVersion: 1
+  cudaSetDevice => hipSetDevice: 3
+  cudaSuccess => hipSuccess: 1
+
+[HIPIFY] info: file './src/source/JDsGaugeItem.cpp' statistics:
+  CONVERTED refs count: 14
+  TOTAL lines of code: 1091
+  WARNINGS: 0
+[HIPIFY] info: CONVERTED refs by names:
+  cudaError_t => hipError_t: 2
+  cudaFree => hipFree: 2
+  cudaGetErrorString => hipGetErrorString: 1
+  cudaGetLastError => hipGetLastError: 1
+  cudaMemcpy => hipMemcpy: 3
+  cudaMemcpyDeviceToHost => hipMemcpyDeviceToHost: 3
+  cudaMemset => hipMemset: 1
+  cudaSuccess => hipSuccess: 1
+
+[HIPIFY] info: file './src/source/JSphInOutZsurf.cpp' statistics:
+  CONVERTED refs count: 6
+  TOTAL lines of code: 457
+  WARNINGS: 0
+[HIPIFY] info: CONVERTED refs by names:
+  cudaFree => hipFree: 2
+  cudaMemcpy => hipMemcpy: 2
+  cudaMemcpyDeviceToHost => hipMemcpyDeviceToHost: 2
+
+[HIPIFY] info: file './src/source/JDsGaugeSystem.cpp' statistics:
+  CONVERTED refs count: 1
+  TOTAL lines of code: 530
+  WARNINGS: 0
+[HIPIFY] info: CONVERTED refs by names:
+  cudaFree => hipFree: 1
+
+[HIPIFY] info: file './src/source/JObjectGpu.cpp' statistics:
+  CONVERTED refs count: 10
+  TOTAL lines of code: 74
+  WARNINGS: 0
+[HIPIFY] info: CONVERTED refs by names:
+  cudaError_t => hipError_t: 4
+  cudaGetErrorString => hipGetErrorString: 2
+  cudaGetLastError => hipGetLastError: 2
+  cudaSuccess => hipSuccess: 2
+
+[HIPIFY] info: file './src/source/JSphGpuSingle_InOut.cpp' statistics:
+  CONVERTED refs count: 15
+  TOTAL lines of code: 297
+  WARNINGS: 0
+[HIPIFY] info: CONVERTED refs by names:
+  cudaMemcpy => hipMemcpy: 6
+  cudaMemcpyHostToDevice => hipMemcpyHostToDevice: 6
+  cudaMemset => hipMemset: 3
+
+[HIPIFY] info: file './src/source/JDsGpuInfo.cpp' statistics:
+  CONVERTED refs count: 7
+  TOTAL lines of code: 123
+  WARNINGS: 0
+[HIPIFY] info: CONVERTED refs by names:
+  cudaDeviceProp => hipDeviceProp_t: 1
+  cudaFree => hipFree: 1
+  cudaGetDevice => hipGetDevice: 1
+  cudaGetDeviceCount => hipGetDeviceCount: 1
+  cudaGetDeviceProperties => hipGetDeviceProperties: 1
+  cudaMalloc => hipMalloc: 1
+  cudaSetDevice => hipSetDevice: 1
+
+[HIPIFY] info: file './src/source/JSphInOut.cpp' statistics:
+  CONVERTED refs count: 36
+  TOTAL lines of code: 1418
+  WARNINGS: 0
+[HIPIFY] info: CONVERTED refs by names:
+  cudaFree => hipFree: 12
+  cudaMemcpy => hipMemcpy: 12
+  cudaMemcpyHostToDevice => hipMemcpyHostToDevice: 12
+
+[HIPIFY] info: file './src/source/JWaveSpectrumGpu.cpp' statistics:
+  CONVERTED refs count: 14
+  TOTAL lines of code: 106
+  WARNINGS: 0
+[HIPIFY] info: CONVERTED refs by names:
+  cudaFree => hipFree: 4
+  cudaMalloc => hipMalloc: 4
+  cudaMemcpy => hipMemcpy: 3
+  cudaMemcpyHostToDevice => hipMemcpyHostToDevice: 3
+
+[HIPIFY] info: file './src/source/JSphShifting.cpp' statistics:
+  CONVERTED refs count: 3
+  TOTAL lines of code: 472
+  WARNINGS: 0
+[HIPIFY] info: CONVERTED refs by names:
+  cudaMemsetAsync => hipMemsetAsync: 1
+  cudaStream_t => hipStream_t: 2
+
+[HIPIFY] info: file './src/source/JSphGpuSingle.cpp' statistics:
+  CONVERTED refs count: 30
+  TOTAL lines of code: 990
+  WARNINGS: 0
+[HIPIFY] info: CONVERTED refs by names:
+  cudaDeviceSynchronize => hipDeviceSynchronize: 1
+  cudaMemcpy => hipMemcpy: 14
+  cudaMemcpyDeviceToHost => hipMemcpyDeviceToHost: 10
+  cudaMemcpyHostToDevice => hipMemcpyHostToDevice: 4
+  cudaMemset => hipMemset: 1
+
+[HIPIFY] info: file './src/source/JMLPistonsGpu.cpp' statistics:
+  CONVERTED refs count: 13
+  TOTAL lines of code: 132
+  WARNINGS: 0
+[HIPIFY] info: CONVERTED refs by names:
+  cudaFree => hipFree: 3
+  cudaMalloc => hipMalloc: 3
+  cudaMemcpy => hipMemcpy: 3
+  cudaMemcpyHostToDevice => hipMemcpyHostToDevice: 3
+  cuda_runtime_api.h => hip/hip_runtime_api.h: 1
+
+[HIPIFY] info: file './src/source/JDsPips.cpp' statistics:
+  CONVERTED refs count: 2
+  TOTAL lines of code: 324
+  WARNINGS: 0
+[HIPIFY] info: CONVERTED refs by names:
+  cudaMemcpy => hipMemcpy: 1
+  cudaMemcpyDeviceToHost => hipMemcpyDeviceToHost: 1
+
+[HIPIFY] info: file './src/source/JSphGpu.cpp' statistics:
+  CONVERTED refs count: 155
+  TOTAL lines of code: 1431
+  WARNINGS: 0
+[HIPIFY] info: CONVERTED refs by names:
+  cudaDeviceReset => hipDeviceReset: 1
+  cudaError_t => hipError_t: 4
+  cudaFree => hipFree: 14
+  cudaGetErrorString => hipGetErrorString: 2
+  cudaGetLastError => hipGetLastError: 2
+  cudaMalloc => hipMalloc: 15
+  cudaMemcpy => hipMemcpy: 53
+  cudaMemcpyDeviceToDevice => hipMemcpyDeviceToDevice: 3
+  cudaMemcpyDeviceToHost => hipMemcpyDeviceToHost: 32
+  cudaMemcpyHostToDevice => hipMemcpyHostToDevice: 18
+  cudaMemset => hipMemset: 8
+  cudaSetDevice => hipSetDevice: 1
+  cudaSuccess => hipSuccess: 2
+
+[HIPIFY] info: file './src_mphase/DSPH_v5.0_NNewtonian/source/JSphInOutGridData.h' statistics:
+  CONVERTED refs count: 1
+  TOTAL lines of code: 172
+  WARNINGS: 0
+[HIPIFY] info: CONVERTED refs by names:
+  cuda_runtime_api.h => hip/hip_runtime_api.h: 1
+
+[HIPIFY] info: file './src_mphase/DSPH_v5.0_NNewtonian/source/FunctionsGeo3d_iker.h' statistics:
+  CONVERTED refs count: 1
+  TOTAL lines of code: 81
+  WARNINGS: 0
+[HIPIFY] info: CONVERTED refs by names:
+  cuda_runtime_api.h => hip/hip_runtime_api.h: 1
+
+[HIPIFY] info: file './src_mphase/DSPH_v5.0_NNewtonian/source/JSphInOut.h' statistics:
+  CONVERTED refs count: 1
+  TOTAL lines of code: 304
+  WARNINGS: 0
+[HIPIFY] info: CONVERTED refs by names:
+  cuda_runtime_api.h => hip/hip_runtime_api.h: 1
+
+[HIPIFY] info: file './src_mphase/DSPH_v5.0_NNewtonian/source/JDsGauge_ker.h' statistics:
+  CONVERTED refs count: 1
+  TOTAL lines of code: 60
+  WARNINGS: 0
+[HIPIFY] info: CONVERTED refs by names:
+  cuda_runtime_api.h => hip/hip_runtime_api.h: 1
+
+[HIPIFY] info: file './src_mphase/DSPH_v5.0_NNewtonian/source/JSphGpu_InOut_iker.h' statistics:
+  CONVERTED refs count: 1
+  TOTAL lines of code: 118
+  WARNINGS: 0
+[HIPIFY] info: CONVERTED refs by names:
+  cuda_runtime_api.h => hip/hip_runtime_api.h: 1
+
+[HIPIFY] info: file './src_mphase/DSPH_v5.0_NNewtonian/source/JCellDivGpu_ker.h' statistics:
+  CONVERTED refs count: 1
+  TOTAL lines of code: 71
+  WARNINGS: 0
+[HIPIFY] info: CONVERTED refs by names:
+  cuda_runtime_api.h => hip/hip_runtime_api.h: 1
+
+[HIPIFY] info: file './src_mphase/DSPH_v5.0_NNewtonian/source/JDsPips_ker.h' statistics:
+  CONVERTED refs count: 4
+  TOTAL lines of code: 48
+  WARNINGS: 0
+[HIPIFY] info: CONVERTED refs by names:
+  cudaStream_t => hipStream_t: 3
+  cuda_runtime_api.h => hip/hip_runtime_api.h: 1
+
+[HIPIFY] info: file './src_mphase/DSPH_v5.0_NNewtonian/source/JObjectGpu.h' statistics:
+  CONVERTED refs count: 3
+  TOTAL lines of code: 62
+  WARNINGS: 0
+[HIPIFY] info: CONVERTED refs by names:
+  cudaError_t => hipError_t: 2
+  cuda_runtime_api.h => hip/hip_runtime_api.h: 1
+
+[HIPIFY] info: file './src_mphase/DSPH_v5.0_NNewtonian/source/JDsPips.h' statistics:
+  CONVERTED refs count: 1
+  TOTAL lines of code: 114
+  WARNINGS: 0
+[HIPIFY] info: CONVERTED refs by names:
+  cuda_runtime_api.h => hip/hip_runtime_api.h: 1
+
+[HIPIFY] info: file './src_mphase/DSPH_v5.0_NNewtonian/source/JSphGpuSimple_ker.h' statistics:
+  CONVERTED refs count: 7
+  TOTAL lines of code: 66
+  WARNINGS: 0
+[HIPIFY] info: CONVERTED refs by names:
+  cudaStream_t => hipStream_t: 6
+  cuda_runtime_api.h => hip/hip_runtime_api.h: 1
+  warning: ./src_mphase/DSPH_v5.0_NNewtonian/source/JTimerCuda.h:#23 : //:#   reducidos mediante la GPU usando cudaEvent de CUDA. (10-01-2011)
+  warning: ./src_mphase/DSPH_v5.0_NNewtonian/source/JTimerCuda.h:#37 : /// \brief Defines a class to measure short time intervals on the GPU using cudaEvent.
+
+[HIPIFY] info: file './src_mphase/DSPH_v5.0_NNewtonian/source/JTimerCuda.h' statistics:
+  CONVERTED refs count: 10
+  TOTAL lines of code: 73
+  WARNINGS: 2
+[HIPIFY] info: CONVERTED refs by names:
+  cudaEventCreate => hipEventCreate: 2
+  cudaEventDestroy => hipEventDestroy: 2
+  cudaEventElapsedTime => hipEventElapsedTime: 1
+  cudaEventRecord => hipEventRecord: 2
+  cudaEventSynchronize => hipEventSynchronize: 1
+  cudaEvent_t => hipEvent_t: 1
+  cuda_runtime_api.h => hip/hip_runtime_api.h: 1
+
+[HIPIFY] info: file './src_mphase/DSPH_v5.0_NNewtonian/source/JSphGpu_ker.h' statistics:
+  CONVERTED refs count: 5
+  TOTAL lines of code: 308
+  WARNINGS: 0
+[HIPIFY] info: CONVERTED refs by names:
+  cudaStream_t => hipStream_t: 4
+  cuda_runtime_api.h => hip/hip_runtime_api.h: 1
+
+[HIPIFY] info: file './src_mphase/DSPH_v5.0_NNewtonian/source/JRelaxZone_ker.h' statistics:
+  CONVERTED refs count: 1
+  TOTAL lines of code: 88
+  WARNINGS: 0
+[HIPIFY] info: CONVERTED refs by names:
+  cuda_runtime_api.h => hip/hip_runtime_api.h: 1
+
+[HIPIFY] info: file './src_mphase/DSPH_v5.0_NNewtonian/source/JCellDivDataGpu.h' statistics:
+  CONVERTED refs count: 1
+  TOTAL lines of code: 84
+  WARNINGS: 0
+[HIPIFY] info: CONVERTED refs by names:
+  cuda_runtime_api.h => hip/hip_runtime_api.h: 1
+
+[HIPIFY] info: file './src_mphase/DSPH_v5.0_NNewtonian/source/JSphGpu.h' statistics:
+  CONVERTED refs count: 2
+  TOTAL lines of code: 304
+  WARNINGS: 0
+[HIPIFY] info: CONVERTED refs by names:
+  cudaError_t => hipError_t: 2
+
+[HIPIFY] info: file './src_mphase/DSPH_v5.0_NNewtonian/source/JWaveOrder2_ker.h' statistics:
+  CONVERTED refs count: 1
+  TOTAL lines of code: 50
+  WARNINGS: 0
+[HIPIFY] info: CONVERTED refs by names:
+  cuda_runtime_api.h => hip/hip_runtime_api.h: 1
+
+[HIPIFY] info: file './src_mphase/DSPH_v5.0_NNewtonian/source/JDsAccInput.h' statistics:
+  CONVERTED refs count: 1
+  TOTAL lines of code: 145
+  WARNINGS: 0
+[HIPIFY] info: CONVERTED refs by names:
+  cuda_runtime_api.h => hip/hip_runtime_api.h: 1
+
+[HIPIFY] info: file './src_mphase/DSPH_v5.0_NNewtonian/source/JSphInOutZone.h' statistics:
+  CONVERTED refs count: 1
+  TOTAL lines of code: 182
+  WARNINGS: 0
+[HIPIFY] info: CONVERTED refs by names:
+  cuda_runtime_api.h => hip/hip_runtime_api.h: 1
+
+[HIPIFY] info: file './src_mphase/DSPH_v5.0_NNewtonian/source/JReduSum_ker.h' statistics:
+  CONVERTED refs count: 9
+  TOTAL lines of code: 83
+  WARNINGS: 0
+[HIPIFY] info: CONVERTED refs by names:
+  cudaStream_t => hipStream_t: 8
+  cuda_runtime_api.h => hip/hip_runtime_api.h: 1
+
+[HIPIFY] info: file './src_mphase/DSPH_v5.0_NNewtonian/source/FunctionsMath_iker.h' statistics:
+  CONVERTED refs count: 1
+  TOTAL lines of code: 446
+  WARNINGS: 0
+[HIPIFY] info: CONVERTED refs by names:
+  cuda_runtime_api.h => hip/hip_runtime_api.h: 1
+
+[HIPIFY] info: file './src_mphase/DSPH_v5.0_NNewtonian/source/JSphShifting_ker.h' statistics:
+  CONVERTED refs count: 4
+  TOTAL lines of code: 55
+  WARNINGS: 0
+[HIPIFY] info: CONVERTED refs by names:
+  cudaStream_t => hipStream_t: 3
+  cuda_runtime_api.h => hip/hip_runtime_api.h: 1
+  warning: ./src_mphase/DSPH_v5.0_NNewtonian/source/tinyxml.h:94: unsupported identifier "MAJOR_VERSION"
+  warning: ./src_mphase/DSPH_v5.0_NNewtonian/source/tinyxml.h:95: unsupported identifier "MINOR_VERSION"
+
+[HIPIFY] info: file './src_mphase/DSPH_v5.0_NNewtonian/source/tinyxml.h' statistics:
+  CONVERTED refs count: 0
+  TOTAL lines of code: 1803
+  WARNINGS: 2
+[HIPIFY] info: CONVERTED refs by names:
+
+[HIPIFY] info: file './src_mphase/DSPH_v5.0_NNewtonian/source/JDsGaugeItem.h' statistics:
+  CONVERTED refs count: 2
+  TOTAL lines of code: 470
+  WARNINGS: 0
+[HIPIFY] info: CONVERTED refs by names:
+  cudaError_t => hipError_t: 1
+  cuda_runtime_api.h => hip/hip_runtime_api.h: 1
+
+[HIPIFY] info: file './src_mphase/DSPH_v5.0_NNewtonian/source/FunSphEos_iker.h' statistics:
+  CONVERTED refs count: 1
+  TOTAL lines of code: 87
+  WARNINGS: 0
+[HIPIFY] info: CONVERTED refs by names:
+  cuda_runtime_api.h => hip/hip_runtime_api.h: 1
+
+[HIPIFY] info: file './src_mphase/DSPH_v5.0_NNewtonian/source/FunctionsCuda.h' statistics:
+  CONVERTED refs count: 28
+  TOTAL lines of code: 186
+  WARNINGS: 0
+[HIPIFY] info: CONVERTED refs by names:
+  cudaDeviceSynchronize => hipDeviceSynchronize: 2
+  cudaEventCreate => hipEventCreate: 1
+  cudaEventCreateWithFlags => hipEventCreateWithFlags: 1
+  cudaEventDestroy => hipEventDestroy: 1
+  cudaEventDisableTiming => hipEventDisableTiming: 1
+  cudaEventElapsedTime => hipEventElapsedTime: 2
+  cudaEventRecord => hipEventRecord: 2
+  cudaEventSynchronize => hipEventSynchronize: 2
+  cudaEvent_t => hipEvent_t: 1
+  cudaFree => hipFree: 1
+  cudaFreeHost => hipHostFree: 1
+  cudaMemcpy => hipMemcpy: 1
+  cudaMemcpyAsync => hipMemcpyAsync: 1
+  cudaMemcpyDeviceToHost => hipMemcpyDeviceToHost: 2
+  cudaMemset => hipMemset: 1
+  cudaMemsetAsync => hipMemsetAsync: 1
+  cudaStreamCreate => hipStreamCreate: 1
+  cudaStreamDestroy => hipStreamDestroy: 1
+  cudaStreamSynchronize => hipStreamSynchronize: 2
+  cudaStreamWaitEvent => hipStreamWaitEvent: 1
+  cudaStream_t => hipStream_t: 1
+  cuda_runtime_api.h => hip/hip_runtime_api.h: 1
+
+[HIPIFY] info: file './src_mphase/DSPH_v5.0_NNewtonian/source/JDebugSphGpu.h' statistics:
+  CONVERTED refs count: 2
+  TOTAL lines of code: 91
+  WARNINGS: 0
+[HIPIFY] info: CONVERTED refs by names:
+  cudaError_t => hipError_t: 1
+  cuda_runtime_api.h => hip/hip_runtime_api.h: 1
+
+[HIPIFY] info: file './src_mphase/DSPH_v5.0_NNewtonian/source/JSphInOutVel.h' statistics:
+  CONVERTED refs count: 1
+  TOTAL lines of code: 140
+  WARNINGS: 0
+[HIPIFY] info: CONVERTED refs by names:
+  cuda_runtime_api.h => hip/hip_runtime_api.h: 1
+
+[HIPIFY] info: file './src_mphase/DSPH_v5.0_NNewtonian/source/FunSphKernel_iker.h' statistics:
+  CONVERTED refs count: 1
+  TOTAL lines of code: 193
+  WARNINGS: 0
+[HIPIFY] info: CONVERTED refs by names:
+  cuda_runtime_api.h => hip/hip_runtime_api.h: 1
+
+[HIPIFY] info: file './src_mphase/DSPH_v5.0_NNewtonian/source/JFtMotionSave.h' statistics:
+  CONVERTED refs count: 1
+  TOTAL lines of code: 104
+  WARNINGS: 0
+[HIPIFY] info: CONVERTED refs by names:
+  cuda_runtime_api.h => hip/hip_runtime_api.h: 1
+
+[HIPIFY] info: file './src_mphase/DSPH_v5.0_NNewtonian/source/JDsAccInput_ker.h' statistics:
+  CONVERTED refs count: 2
+  TOTAL lines of code: 47
+  WARNINGS: 0
+[HIPIFY] info: CONVERTED refs by names:
+  cudaStream_t => hipStream_t: 1
+  cuda_runtime_api.h => hip/hip_runtime_api.h: 1
+
+[HIPIFY] info: file './src_mphase/DSPH_v5.0_NNewtonian/source/FunctionsBasic_iker.h' statistics:
+  CONVERTED refs count: 1
+  TOTAL lines of code: 68
+  WARNINGS: 0
+[HIPIFY] info: CONVERTED refs by names:
+  cuda_runtime_api.h => hip/hip_runtime_api.h: 1
+
+[HIPIFY] info: file './src_mphase/DSPH_v5.0_NNewtonian/source/JSphShifting.h' statistics:
+  CONVERTED refs count: 3
+  TOTAL lines of code: 164
+  WARNINGS: 0
+[HIPIFY] info: CONVERTED refs by names:
+  cudaStream_t => hipStream_t: 2
+  cuda_runtime_api.h => hip/hip_runtime_api.h: 1
+
+[HIPIFY] info: file './src_mphase/DSPH_v5.0_NNewtonian/source/JSphGpu_NN_ker.h' statistics:
+  CONVERTED refs count: 1
+  TOTAL lines of code: 42
+  WARNINGS: 0
+[HIPIFY] info: CONVERTED refs by names:
+  cuda_runtime_api.h => hip/hip_runtime_api.h: 1
+
+[HIPIFY] info: file './src/source/JSphInOutGridData.h' statistics:
+  CONVERTED refs count: 1
+  TOTAL lines of code: 172
+  WARNINGS: 0
+[HIPIFY] info: CONVERTED refs by names:
+  cuda_runtime_api.h => hip/hip_runtime_api.h: 1
+
+[HIPIFY] info: file './src/source/FunctionsGeo3d_iker.h' statistics:
+  CONVERTED refs count: 1
+  TOTAL lines of code: 207
+  WARNINGS: 0
+[HIPIFY] info: CONVERTED refs by names:
+  cuda_runtime_api.h => hip/hip_runtime_api.h: 1
+
+[HIPIFY] info: file './src/source/JSphInOut.h' statistics:
+  CONVERTED refs count: 1
+  TOTAL lines of code: 308
+  WARNINGS: 0
+[HIPIFY] info: CONVERTED refs by names:
+  cuda_runtime_api.h => hip/hip_runtime_api.h: 1
+
+[HIPIFY] info: file './src/source/JDsGauge_ker.h' statistics:
+  CONVERTED refs count: 1
+  TOTAL lines of code: 60
+  WARNINGS: 0
+[HIPIFY] info: CONVERTED refs by names:
+  cuda_runtime_api.h => hip/hip_runtime_api.h: 1
+
+[HIPIFY] info: file './src/source/JSphGpu_InOut_iker.h' statistics:
+  CONVERTED refs count: 1
+  TOTAL lines of code: 112
+  WARNINGS: 0
+[HIPIFY] info: CONVERTED refs by names:
+  cuda_runtime_api.h => hip/hip_runtime_api.h: 1
+
+[HIPIFY] info: file './src/source/JCellDivGpu_ker.h' statistics:
+  CONVERTED refs count: 1
+  TOTAL lines of code: 71
+  WARNINGS: 0
+[HIPIFY] info: CONVERTED refs by names:
+  cuda_runtime_api.h => hip/hip_runtime_api.h: 1
+
+[HIPIFY] info: file './src/source/JDsPips_ker.h' statistics:
+  CONVERTED refs count: 4
+  TOTAL lines of code: 48
+  WARNINGS: 0
+[HIPIFY] info: CONVERTED refs by names:
+  cudaStream_t => hipStream_t: 3
+  cuda_runtime_api.h => hip/hip_runtime_api.h: 1
+
+[HIPIFY] info: file './src/source/JObjectGpu.h' statistics:
+  CONVERTED refs count: 3
+  TOTAL lines of code: 62
+  WARNINGS: 0
+[HIPIFY] info: CONVERTED refs by names:
+  cudaError_t => hipError_t: 2
+  cuda_runtime_api.h => hip/hip_runtime_api.h: 1
+
+[HIPIFY] info: file './src/source/JDsPips.h' statistics:
+  CONVERTED refs count: 1
+  TOTAL lines of code: 114
+  WARNINGS: 0
+[HIPIFY] info: CONVERTED refs by names:
+  cuda_runtime_api.h => hip/hip_runtime_api.h: 1
+
+[HIPIFY] info: file './src/source/JSphGpuSimple_ker.h' statistics:
+  CONVERTED refs count: 7
+  TOTAL lines of code: 66
+  WARNINGS: 0
+[HIPIFY] info: CONVERTED refs by names:
+  cudaStream_t => hipStream_t: 6
+  cuda_runtime_api.h => hip/hip_runtime_api.h: 1
+  warning: ./src/source/JTimerCuda.h:#23 : //:#   reducidos mediante la GPU usando cudaEvent de CUDA. (10-01-2011)
+  warning: ./src/source/JTimerCuda.h:#37 : /// \brief Defines a class to measure short time intervals on the GPU using cudaEvent.
+
+[HIPIFY] info: file './src/source/JTimerCuda.h' statistics:
+  CONVERTED refs count: 10
+  TOTAL lines of code: 73
+  WARNINGS: 2
+[HIPIFY] info: CONVERTED refs by names:
+  cudaEventCreate => hipEventCreate: 2
+  cudaEventDestroy => hipEventDestroy: 2
+  cudaEventElapsedTime => hipEventElapsedTime: 1
+  cudaEventRecord => hipEventRecord: 2
+  cudaEventSynchronize => hipEventSynchronize: 1
+  cudaEvent_t => hipEvent_t: 1
+  cuda_runtime_api.h => hip/hip_runtime_api.h: 1
+
+[HIPIFY] info: file './src/source/JDsDamping.h' statistics:
+  CONVERTED refs count: 1
+  TOTAL lines of code: 292
+  WARNINGS: 0
+[HIPIFY] info: CONVERTED refs by names:
+  cuda_runtime_api.h => hip/hip_runtime_api.h: 1
+
+[HIPIFY] info: file './src/source/JSphGpu_ker.h' statistics:
+  CONVERTED refs count: 5
+  TOTAL lines of code: 301
+  WARNINGS: 0
+[HIPIFY] info: CONVERTED refs by names:
+  cudaStream_t => hipStream_t: 4
+  cuda_runtime_api.h => hip/hip_runtime_api.h: 1
+
+[HIPIFY] info: file './src/source/JRelaxZone_ker.h' statistics:
+  CONVERTED refs count: 1
+  TOTAL lines of code: 88
+  WARNINGS: 0
+[HIPIFY] info: CONVERTED refs by names:
+  cuda_runtime_api.h => hip/hip_runtime_api.h: 1
+
+[HIPIFY] info: file './src/source/JCellDivDataGpu.h' statistics:
+  CONVERTED refs count: 1
+  TOTAL lines of code: 84
+  WARNINGS: 0
+[HIPIFY] info: CONVERTED refs by names:
+  cuda_runtime_api.h => hip/hip_runtime_api.h: 1
+
+[HIPIFY] info: file './src/source/JSphGpu.h' statistics:
+  CONVERTED refs count: 2
+  TOTAL lines of code: 280
+  WARNINGS: 0
+[HIPIFY] info: CONVERTED refs by names:
+  cudaError_t => hipError_t: 2
+
+[HIPIFY] info: file './src/source/JWaveOrder2_ker.h' statistics:
+  CONVERTED refs count: 1
+  TOTAL lines of code: 50
+  WARNINGS: 0
+[HIPIFY] info: CONVERTED refs by names:
+  cuda_runtime_api.h => hip/hip_runtime_api.h: 1
+
+[HIPIFY] info: file './src/source/JDsAccInput.h' statistics:
+  CONVERTED refs count: 1
+  TOTAL lines of code: 145
+  WARNINGS: 0
+[HIPIFY] info: CONVERTED refs by names:
+  cuda_runtime_api.h => hip/hip_runtime_api.h: 1
+
+[HIPIFY] info: file './src/source/JSphInOutZone.h' statistics:
+  CONVERTED refs count: 1
+  TOTAL lines of code: 181
+  WARNINGS: 0
+[HIPIFY] info: CONVERTED refs by names:
+  cuda_runtime_api.h => hip/hip_runtime_api.h: 1
+
+[HIPIFY] info: file './src/source/JReduSum_ker.h' statistics:
+  CONVERTED refs count: 9
+  TOTAL lines of code: 83
+  WARNINGS: 0
+[HIPIFY] info: CONVERTED refs by names:
+  cudaStream_t => hipStream_t: 8
+  cuda_runtime_api.h => hip/hip_runtime_api.h: 1
+
+[HIPIFY] info: file './src/source/FunctionsMath_iker.h' statistics:
+  CONVERTED refs count: 1
+  TOTAL lines of code: 446
+  WARNINGS: 0
+[HIPIFY] info: CONVERTED refs by names:
+  cuda_runtime_api.h => hip/hip_runtime_api.h: 1
+
+[HIPIFY] info: file './src/source/JSphShifting_ker.h' statistics:
+  CONVERTED refs count: 4
+  TOTAL lines of code: 55
+  WARNINGS: 0
+[HIPIFY] info: CONVERTED refs by names:
+  cudaStream_t => hipStream_t: 3
+  cuda_runtime_api.h => hip/hip_runtime_api.h: 1
+  warning: ./src/source/tinyxml.h:94: unsupported identifier "MAJOR_VERSION"
+  warning: ./src/source/tinyxml.h:95: unsupported identifier "MINOR_VERSION"
+
+[HIPIFY] info: file './src/source/tinyxml.h' statistics:
+  CONVERTED refs count: 0
+  TOTAL lines of code: 1803
+  WARNINGS: 2
+[HIPIFY] info: CONVERTED refs by names:
+
+[HIPIFY] info: file './src/source/JDsGaugeItem.h' statistics:
+  CONVERTED refs count: 2
+  TOTAL lines of code: 471
+  WARNINGS: 0
+[HIPIFY] info: CONVERTED refs by names:
+  cudaError_t => hipError_t: 1
+  cuda_runtime_api.h => hip/hip_runtime_api.h: 1
+
+[HIPIFY] info: file './src/source/FunSphEos_iker.h' statistics:
+  CONVERTED refs count: 1
+  TOTAL lines of code: 68
+  WARNINGS: 0
+[HIPIFY] info: CONVERTED refs by names:
+  cuda_runtime_api.h => hip/hip_runtime_api.h: 1
+
+[HIPIFY] info: file './src/source/FunctionsCuda.h' statistics:
+  CONVERTED refs count: 30
+  TOTAL lines of code: 192
+  WARNINGS: 0
+[HIPIFY] info: CONVERTED refs by names:
+  cudaDeviceReset => hipDeviceReset: 1
+  cudaDeviceSynchronize => hipDeviceSynchronize: 2
+  cudaEventCreate => hipEventCreate: 1
+  cudaEventCreateWithFlags => hipEventCreateWithFlags: 1
+  cudaEventDestroy => hipEventDestroy: 1
+  cudaEventDisableTiming => hipEventDisableTiming: 1
+  cudaEventElapsedTime => hipEventElapsedTime: 2
+  cudaEventRecord => hipEventRecord: 2
+  cudaEventSynchronize => hipEventSynchronize: 2
+  cudaEvent_t => hipEvent_t: 1
+  cudaFree => hipFree: 1
+  cudaFreeHost => hipHostFree: 1
+  cudaMemcpy => hipMemcpy: 1
+  cudaMemcpyAsync => hipMemcpyAsync: 1
+  cudaMemcpyDeviceToHost => hipMemcpyDeviceToHost: 2
+  cudaMemset => hipMemset: 1
+  cudaMemsetAsync => hipMemsetAsync: 1
+  cudaSetDevice => hipSetDevice: 1
+  cudaStreamCreate => hipStreamCreate: 1
+  cudaStreamDestroy => hipStreamDestroy: 1
+  cudaStreamSynchronize => hipStreamSynchronize: 2
+  cudaStreamWaitEvent => hipStreamWaitEvent: 1
+  cudaStream_t => hipStream_t: 1
+  cuda_runtime_api.h => hip/hip_runtime_api.h: 1
+
+[HIPIFY] info: file './src/source/JDebugSphGpu.h' statistics:
+  CONVERTED refs count: 2
+  TOTAL lines of code: 91
+  WARNINGS: 0
+[HIPIFY] info: CONVERTED refs by names:
+  cudaError_t => hipError_t: 1
+  cuda_runtime_api.h => hip/hip_runtime_api.h: 1
+
+[HIPIFY] info: file './src/source/JDsTimersGpu.h' statistics:
+  CONVERTED refs count: 3
+  TOTAL lines of code: 127
+  WARNINGS: 0
+[HIPIFY] info: CONVERTED refs by names:
+  cudaDeviceSynchronize => hipDeviceSynchronize: 2
+  cuda_runtime_api.h => hip/hip_runtime_api.h: 1
+
+[HIPIFY] info: file './src/source/JSphInOutVel.h' statistics:
+  CONVERTED refs count: 1
+  TOTAL lines of code: 148
+  WARNINGS: 0
+[HIPIFY] info: CONVERTED refs by names:
+  cuda_runtime_api.h => hip/hip_runtime_api.h: 1
+
+[HIPIFY] info: file './src/source/FunSphKernel_iker.h' statistics:
+  CONVERTED refs count: 1
+  TOTAL lines of code: 193
+  WARNINGS: 0
+[HIPIFY] info: CONVERTED refs by names:
+  cuda_runtime_api.h => hip/hip_runtime_api.h: 1
+
+[HIPIFY] info: file './src/source/JFtMotionSave.h' statistics:
+  CONVERTED refs count: 1
+  TOTAL lines of code: 104
+  WARNINGS: 0
+[HIPIFY] info: CONVERTED refs by names:
+  cuda_runtime_api.h => hip/hip_runtime_api.h: 1
+
+[HIPIFY] info: file './src/source/JDsAccInput_ker.h' statistics:
+  CONVERTED refs count: 2
+  TOTAL lines of code: 47
+  WARNINGS: 0
+[HIPIFY] info: CONVERTED refs by names:
+  cudaStream_t => hipStream_t: 1
+  cuda_runtime_api.h => hip/hip_runtime_api.h: 1
+
+[HIPIFY] info: file './src/source/FunctionsBasic_iker.h' statistics:
+  CONVERTED refs count: 1
+  TOTAL lines of code: 68
+  WARNINGS: 0
+[HIPIFY] info: CONVERTED refs by names:
+  cuda_runtime_api.h => hip/hip_runtime_api.h: 1
+
+[HIPIFY] info: file './src/source/JSphShifting.h' statistics:
+  CONVERTED refs count: 3
+  TOTAL lines of code: 164
+  WARNINGS: 0
+[HIPIFY] info: CONVERTED refs by names:
+  cudaStream_t => hipStream_t: 2
+  cuda_runtime_api.h => hip/hip_runtime_api.h: 1
+
+[HIPIFY] info: file 'GLOBAL' statistics:
+  CONVERTED refs count: 1491
+  TOTAL lines of code: 171130
+  WARNINGS: 8
+[HIPIFY] info: CONVERTED refs by names:
+  cudaDeviceCanAccessPeer => hipDeviceCanAccessPeer: 4
+  cudaDeviceProp => hipDeviceProp_t: 8
+  cudaDeviceReset => hipDeviceReset: 3
+  cudaDeviceSynchronize => hipDeviceSynchronize: 7
+  cudaDriverGetVersion => hipDriverGetVersion: 2
+  cudaError_t => hipError_t: 42
+  cudaEventCreate => hipEventCreate: 6
+  cudaEventCreateWithFlags => hipEventCreateWithFlags: 2
+  cudaEventDestroy => hipEventDestroy: 6
+  cudaEventDisableTiming => hipEventDisableTiming: 2
+  cudaEventElapsedTime => hipEventElapsedTime: 6
+  cudaEventRecord => hipEventRecord: 8
+  cudaEventSynchronize => hipEventSynchronize: 6
+  cudaEvent_t => hipEvent_t: 4
+  cudaFree => hipFree: 128
+  cudaFreeHost => hipHostFree: 2
+  cudaFuncAttributes => hipFuncAttributes: 6
+  cudaFuncGetAttributes => hipFuncGetAttributes: 6
+  cudaGetDevice => hipGetDevice: 6
+  cudaGetDeviceCount => hipGetDeviceCount: 5
+  cudaGetDeviceProperties => hipGetDeviceProperties: 6
+  cudaGetErrorString => hipGetErrorString: 14
+  cudaGetLastError => hipGetLastError: 18
+  cudaHostAlloc => hipHostAlloc: 18
+  cudaHostAllocDefault => hipHostMallocDefault: 18
+  cudaMalloc => hipMalloc: 107
+  cudaMemcpy => hipMemcpy: 339
+  cudaMemcpyAsync => hipMemcpyAsync: 18
+  cudaMemcpyDeviceToDevice => hipMemcpyDeviceToDevice: 18
+  cudaMemcpyDeviceToHost => hipMemcpyDeviceToHost: 192
+  cudaMemcpyHostToDevice => hipMemcpyHostToDevice: 116
+  cudaMemcpyToSymbol => hipMemcpyToSymbol: 4
+  cudaMemset => hipMemset: 48
+  cudaMemsetAsync => hipMemsetAsync: 4
+  cudaOccupancyMaxPotentialBlockSize => hipOccupancyMaxPotentialBlockSize: 6
+  cudaRuntimeGetVersion => hipRuntimeGetVersion: 2
+  cudaSetDevice => hipSetDevice: 10
+  cudaStreamCreate => hipStreamCreate: 2
+  cudaStreamDestroy => hipStreamDestroy: 2
+  cudaStreamSynchronize => hipStreamSynchronize: 4
+  cudaStreamWaitEvent => hipStreamWaitEvent: 2
+  cudaStream_t => hipStream_t: 114
+  cudaSuccess => hipSuccess: 18
+  cuda_runtime_api.h => hip/hip_runtime_api.h: 69
+

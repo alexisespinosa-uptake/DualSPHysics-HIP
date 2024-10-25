@@ -30,7 +30,7 @@
 #include "DualSphDef.h"
 #include "JSphTimersGpu.h"
 #include "JCellDivDataGpu.h"
-#include <cuda_runtime_api.h>
+#include <hip/hip_runtime_api.h>
 
 class JLog2;
 
@@ -130,7 +130,7 @@ typedef struct StrInterParmsg{
   //tsymatrix3f *gradvel;
   float4 *shiftposfs;
   //-Other values and objects.
-  cudaStream_t stm;
+  hipStream_t stm;
   StKerInfo *kerinfo;
   //<vs_non-Newtonian>
   float *viscetadt; //<vs_non-Newtonian>
@@ -161,7 +161,7 @@ typedef struct StrInterParmsg{
     ,float *viscdt_,float *viscetadt_,float* ar_,float3 *ace_,float *delta_
     ,float* visco_eta_, tsymatrix3f *spstau_, tsymatrix3f *spsgradvel_, tsymatrix3f *d_tensor_, float *auxnn_  //<vs_non-Newtonian>
     ,float4 *shiftposfs_
-    ,cudaStream_t stm_
+    ,hipStream_t stm_
     ,StKerInfo *kerinfo_)
   {
     //-Configuration options.
@@ -233,10 +233,10 @@ void Interaction_ForcesDem(unsigned bsize,unsigned nfloat
 
 //-Kernels for calculating the Laminar+SPS viscosity.
 void ComputeSpsTau(unsigned np,unsigned npb,float smag,float blin
-  ,const float4 *velrhop,const tsymatrix3f *gradvelg,tsymatrix3f *tau,cudaStream_t stm=NULL);
+  ,const float4 *velrhop,const tsymatrix3f *gradvelg,tsymatrix3f *tau,hipStream_t stm=NULL);
 
 //-Kernels for Delta-SPH.
-void AddDelta(unsigned n,const float *delta,float *ar,cudaStream_t stm=NULL);
+void AddDelta(unsigned n,const float *delta,float *ar,hipStream_t stm=NULL);
 
 //-Kernels for ComputeStep (position).
 void ComputeStepPos (byte periactive,bool floatings,unsigned np,unsigned npb
