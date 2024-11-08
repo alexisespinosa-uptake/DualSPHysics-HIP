@@ -23,7 +23,14 @@
 #include "Functions.h"
 #include "FunctionsCuda.h"
 #include <cfloat>
+#ifndef __HIP_PLATFORM_AMD__
 #include <math_constants.h>
+#else
+// HIP compilation: manually define any necessary constants like those in CUDA's math_constants.h
+//#define CUDART_PI_F 3.141592654f
+//#define CUDART_E_F 2.718281828f
+// Add any other constants as needed
+#endif
 
 namespace cusphinout{
 #include "FunctionsBasic_iker.h"

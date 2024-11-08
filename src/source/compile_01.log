@@ -1,0 +1,146 @@
+CC  -c -O3 -fopenmp -D_WITHGPU -std=c++0x -D__HIP_PLATFORM_AMD__ -ffast-math -I./ -IOCM_PATH/include JXml.cpp 
+CC  -c -O3 -fopenmp -D_WITHGPU -std=c++0x -D__HIP_PLATFORM_AMD__ -ffast-math -I./ -IOCM_PATH/include tinystr.cpp 
+CC  -c -O3 -fopenmp -D_WITHGPU -std=c++0x -D__HIP_PLATFORM_AMD__ -ffast-math -I./ -IOCM_PATH/include tinyxml.cpp 
+CC  -c -O3 -fopenmp -D_WITHGPU -std=c++0x -D__HIP_PLATFORM_AMD__ -ffast-math -I./ -IOCM_PATH/include tinyxmlerror.cpp 
+CC  -c -O3 -fopenmp -D_WITHGPU -std=c++0x -D__HIP_PLATFORM_AMD__ -ffast-math -I./ -IOCM_PATH/include tinyxmlparser.cpp 
+CC  -c -O3 -fopenmp -D_WITHGPU -std=c++0x -D__HIP_PLATFORM_AMD__ -ffast-math -I./ -IOCM_PATH/include JMotion.cpp 
+CC  -c -O3 -fopenmp -D_WITHGPU -std=c++0x -D__HIP_PLATFORM_AMD__ -ffast-math -I./ -IOCM_PATH/include JMotionList.cpp 
+CC  -c -O3 -fopenmp -D_WITHGPU -std=c++0x -D__HIP_PLATFORM_AMD__ -ffast-math -I./ -IOCM_PATH/include JMotionMov.cpp 
+CC  -c -O3 -fopenmp -D_WITHGPU -std=c++0x -D__HIP_PLATFORM_AMD__ -ffast-math -I./ -IOCM_PATH/include JMotionObj.cpp 
+CC  -c -O3 -fopenmp -D_WITHGPU -std=c++0x -D__HIP_PLATFORM_AMD__ -ffast-math -I./ -IOCM_PATH/include JMotionPos.cpp 
+CC  -c -O3 -fopenmp -D_WITHGPU -std=c++0x -D__HIP_PLATFORM_AMD__ -ffast-math -I./ -IOCM_PATH/include JDsMotion.cpp 
+CC  -c -O3 -fopenmp -D_WITHGPU -std=c++0x -D__HIP_PLATFORM_AMD__ -ffast-math -I./ -IOCM_PATH/include Functions.cpp 
+CC  -c -O3 -fopenmp -D_WITHGPU -std=c++0x -D__HIP_PLATFORM_AMD__ -ffast-math -I./ -IOCM_PATH/include FunGeo3d.cpp 
+CC  -c -O3 -fopenmp -D_WITHGPU -std=c++0x -D__HIP_PLATFORM_AMD__ -ffast-math -I./ -IOCM_PATH/include FunSphKernelsCfg.cpp 
+CC  -c -O3 -fopenmp -D_WITHGPU -std=c++0x -D__HIP_PLATFORM_AMD__ -ffast-math -I./ -IOCM_PATH/include JAppInfo.cpp 
+CC  -c -O3 -fopenmp -D_WITHGPU -std=c++0x -D__HIP_PLATFORM_AMD__ -ffast-math -I./ -IOCM_PATH/include JBinaryData.cpp 
+CC  -c -O3 -fopenmp -D_WITHGPU -std=c++0x -D__HIP_PLATFORM_AMD__ -ffast-math -I./ -IOCM_PATH/include JCfgRunBase.cpp 
+CC  -c -O3 -fopenmp -D_WITHGPU -std=c++0x -D__HIP_PLATFORM_AMD__ -ffast-math -I./ -IOCM_PATH/include JDataArrays.cpp 
+CC  -c -O3 -fopenmp -D_WITHGPU -std=c++0x -D__HIP_PLATFORM_AMD__ -ffast-math -I./ -IOCM_PATH/include JException.cpp 
+CC  -c -O3 -fopenmp -D_WITHGPU -std=c++0x -D__HIP_PLATFORM_AMD__ -ffast-math -I./ -IOCM_PATH/include JLinearValue.cpp 
+CC  -c -O3 -fopenmp -D_WITHGPU -std=c++0x -D__HIP_PLATFORM_AMD__ -ffast-math -I./ -IOCM_PATH/include JLog2.cpp 
+CC  -c -O3 -fopenmp -D_WITHGPU -std=c++0x -D__HIP_PLATFORM_AMD__ -ffast-math -I./ -IOCM_PATH/include JObject.cpp 
+CC  -c -O3 -fopenmp -D_WITHGPU -std=c++0x -D__HIP_PLATFORM_AMD__ -ffast-math -I./ -IOCM_PATH/include JOutputCsv.cpp 
+CC  -c -O3 -fopenmp -D_WITHGPU -std=c++0x -D__HIP_PLATFORM_AMD__ -ffast-math -I./ -IOCM_PATH/include JRadixSort.cpp 
+CC  -c -O3 -fopenmp -D_WITHGPU -std=c++0x -D__HIP_PLATFORM_AMD__ -ffast-math -I./ -IOCM_PATH/include JRangeFilter.cpp 
+CC  -c -O3 -fopenmp -D_WITHGPU -std=c++0x -D__HIP_PLATFORM_AMD__ -ffast-math -I./ -IOCM_PATH/include JReadDatafile.cpp 
+CC  -c -O3 -fopenmp -D_WITHGPU -std=c++0x -D__HIP_PLATFORM_AMD__ -ffast-math -I./ -IOCM_PATH/include JSaveCsv2.cpp 
+CC  -c -O3 -fopenmp -D_WITHGPU -std=c++0x -D__HIP_PLATFORM_AMD__ -ffast-math -I./ -IOCM_PATH/include JTimeControl.cpp 
+CC  -c -O3 -fopenmp -D_WITHGPU -std=c++0x -D__HIP_PLATFORM_AMD__ -ffast-math -I./ -IOCM_PATH/include randomc.cpp 
+CC  -c -O3 -fopenmp -D_WITHGPU -std=c++0x -D__HIP_PLATFORM_AMD__ -ffast-math -I./ -IOCM_PATH/include JDsphConfig.cpp 
+CC  -c -O3 -fopenmp -D_WITHGPU -std=c++0x -D__HIP_PLATFORM_AMD__ -ffast-math -I./ -IOCM_PATH/include JDsPips.cpp 
+CC  -c -O3 -fopenmp -D_WITHGPU -std=c++0x -D__HIP_PLATFORM_AMD__ -ffast-math -I./ -IOCM_PATH/include JPartDataBi4.cpp 
+CC  -c -O3 -fopenmp -D_WITHGPU -std=c++0x -D__HIP_PLATFORM_AMD__ -ffast-math -I./ -IOCM_PATH/include JPartDataHead.cpp 
+CC  -c -O3 -fopenmp -D_WITHGPU -std=c++0x -D__HIP_PLATFORM_AMD__ -ffast-math -I./ -IOCM_PATH/include JPartFloatBi4.cpp 
+CC  -c -O3 -fopenmp -D_WITHGPU -std=c++0x -D__HIP_PLATFORM_AMD__ -ffast-math -I./ -IOCM_PATH/include JPartOutBi4Save.cpp 
+CC  -c -O3 -fopenmp -D_WITHGPU -std=c++0x -D__HIP_PLATFORM_AMD__ -ffast-math -I./ -IOCM_PATH/include JCaseCtes.cpp 
+CC  -c -O3 -fopenmp -D_WITHGPU -std=c++0x -D__HIP_PLATFORM_AMD__ -ffast-math -I./ -IOCM_PATH/include JCaseEParms.cpp 
+CC  -c -O3 -fopenmp -D_WITHGPU -std=c++0x -D__HIP_PLATFORM_AMD__ -ffast-math -I./ -IOCM_PATH/include JCaseParts.cpp 
+CC  -c -O3 -fopenmp -D_WITHGPU -std=c++0x -D__HIP_PLATFORM_AMD__ -ffast-math -I./ -IOCM_PATH/include JCaseProperties.cpp 
+CC  -c -O3 -fopenmp -D_WITHGPU -std=c++0x -D__HIP_PLATFORM_AMD__ -ffast-math -I./ -IOCM_PATH/include JCaseUserVars.cpp 
+CC  -c -O3 -fopenmp -D_WITHGPU -std=c++0x -D__HIP_PLATFORM_AMD__ -ffast-math -I./ -IOCM_PATH/include JCaseVtkOut.cpp 
+CC  -c -O3 -fopenmp -D_WITHGPU -std=c++0x -D__HIP_PLATFORM_AMD__ -ffast-math -I./ -IOCM_PATH/include JArraysCpu.cpp 
+CC  -c -O3 -fopenmp -D_WITHGPU -std=c++0x -D__HIP_PLATFORM_AMD__ -ffast-math -I./ -IOCM_PATH/include JCellDivCpu.cpp 
+CC  -c -O3 -fopenmp -D_WITHGPU -std=c++0x -D__HIP_PLATFORM_AMD__ -ffast-math -I./ -IOCM_PATH/include JSphCfgRun.cpp 
+CC  -c -O3 -fopenmp -D_WITHGPU -std=c++0x -D__HIP_PLATFORM_AMD__ -ffast-math -I./ -IOCM_PATH/include JComputeMotionRef.cpp 
+CC  -c -O3 -fopenmp -D_WITHGPU -std=c++0x -D__HIP_PLATFORM_AMD__ -ffast-math -I./ -IOCM_PATH/include JDsDcell.cpp 
+CC  -c -O3 -fopenmp -D_WITHGPU -std=c++0x -D__HIP_PLATFORM_AMD__ -ffast-math -I./ -IOCM_PATH/include JDsDamping.cpp 
+CC  -c -O3 -fopenmp -D_WITHGPU -std=c++0x -D__HIP_PLATFORM_AMD__ -ffast-math -I./ -IOCM_PATH/include JDsExtraData.cpp 
+CC  -c -O3 -fopenmp -D_WITHGPU -std=c++0x -D__HIP_PLATFORM_AMD__ -ffast-math -I./ -IOCM_PATH/include JDsGaugeItem.cpp 
+CC  -c -O3 -fopenmp -D_WITHGPU -std=c++0x -D__HIP_PLATFORM_AMD__ -ffast-math -I./ -IOCM_PATH/include JDsGaugeSystem.cpp 
+CC  -c -O3 -fopenmp -D_WITHGPU -std=c++0x -D__HIP_PLATFORM_AMD__ -ffast-math -I./ -IOCM_PATH/include JDsPartsOut.cpp 
+CC  -c -O3 -fopenmp -D_WITHGPU -std=c++0x -D__HIP_PLATFORM_AMD__ -ffast-math -I./ -IOCM_PATH/include JDsSaveDt.cpp 
+CC  -c -O3 -fopenmp -D_WITHGPU -std=c++0x -D__HIP_PLATFORM_AMD__ -ffast-math -I./ -IOCM_PATH/include JSphShifting.cpp 
+CC  -c -O3 -fopenmp -D_WITHGPU -std=c++0x -D__HIP_PLATFORM_AMD__ -ffast-math -I./ -IOCM_PATH/include JSph.cpp 
+CC  -c -O3 -fopenmp -D_WITHGPU -std=c++0x -D__HIP_PLATFORM_AMD__ -ffast-math -I./ -IOCM_PATH/include JDsAccInput.cpp 
+CC  -c -O3 -fopenmp -D_WITHGPU -std=c++0x -D__HIP_PLATFORM_AMD__ -ffast-math -I./ -IOCM_PATH/include JSphCpu.cpp 
+CC  -c -O3 -fopenmp -D_WITHGPU -std=c++0x -D__HIP_PLATFORM_AMD__ -ffast-math -I./ -IOCM_PATH/include JDsInitialize.cpp 
+CC  -c -O3 -fopenmp -D_WITHGPU -std=c++0x -D__HIP_PLATFORM_AMD__ -ffast-math -I./ -IOCM_PATH/include JFtMotionSave.cpp 
+CC  -c -O3 -fopenmp -D_WITHGPU -std=c++0x -D__HIP_PLATFORM_AMD__ -ffast-math -I./ -IOCM_PATH/include JSphMk.cpp 
+CC  -c -O3 -fopenmp -D_WITHGPU -std=c++0x -D__HIP_PLATFORM_AMD__ -ffast-math -I./ -IOCM_PATH/include JDsPartsInit.cpp 
+CC  -c -O3 -fopenmp -D_WITHGPU -std=c++0x -D__HIP_PLATFORM_AMD__ -ffast-math -I./ -IOCM_PATH/include JDsFixedDt.cpp 
+CC  -c -O3 -fopenmp -D_WITHGPU -std=c++0x -D__HIP_PLATFORM_AMD__ -ffast-math -I./ -IOCM_PATH/include JDsViscoInput.cpp 
+CC  -c -O3 -fopenmp -D_WITHGPU -std=c++0x -D__HIP_PLATFORM_AMD__ -ffast-math -I./ -IOCM_PATH/include JDsOutputTime.cpp 
+CC  -c -O3 -fopenmp -D_WITHGPU -std=c++0x -D__HIP_PLATFORM_AMD__ -ffast-math -I./ -IOCM_PATH/include JDsTimers.cpp 
+CC  -c -O3 -fopenmp -D_WITHGPU -std=c++0x -D__HIP_PLATFORM_AMD__ -ffast-math -I./ -IOCM_PATH/include JWaveSpectrumGpu.cpp 
+CC  -c -O3 -fopenmp -D_WITHGPU -std=c++0x -D__HIP_PLATFORM_AMD__ -ffast-math -I./ -IOCM_PATH/include main.cpp 
+CC  -c -O3 -fopenmp -D_WITHGPU -std=c++0x -D__HIP_PLATFORM_AMD__ -ffast-math -I./ -IOCM_PATH/include JCellDivCpuSingle.cpp 
+CC  -c -O3 -fopenmp -D_WITHGPU -std=c++0x -D__HIP_PLATFORM_AMD__ -ffast-math -I./ -IOCM_PATH/include JPartsLoad4.cpp 
+CC  -c -O3 -fopenmp -D_WITHGPU -std=c++0x -D__HIP_PLATFORM_AMD__ -ffast-math -I./ -IOCM_PATH/include JSphCpuSingle.cpp 
+FunctionsCuda.cpp: In function 'fcuda::StGpuInfo fcuda::GetCudaDeviceInfo(int)':
+FunctionsCuda.cpp:94:24: error: 'hipDeviceProp_t' {aka 'struct hipDeviceProp_t'} has no member named 'deviceOverlap'
+   94 |   g.overlap=deviceProp.deviceOverlap;
+      |                        ^~~~~~~~~~~~~
+FunctionsCuda.cpp:95:29: error: 'hipDeviceProp_t' {aka 'struct hipDeviceProp_t'} has no member named 'asyncEngineCount'
+   95 |   g.ovCC  -c -O3 -fopenmp -D_WITHGPU -std=c++0x -D__HIP_PLATFORM_AMD__ -ffast-math -I./ -IOCM_PATH/include FunctionsCuda.cpp 
+erlapcount=deviceProp.asyncEngineCount;
+      |                             ^~~~~~~~~~~~~~~~
+FunctionsCuda.cpp:103:20: error: 'hipDeviceProp_t' {aka 'struct hipDeviceProp_t'} has no member named 'unifiedAddressing'
+  103 |   g.uva=deviceProp.unifiedAddressing;
+      |                    ^~~~~~~~~~~~~~~~~
+FunctionsCuda.cpp: In function 'size_t fcuda::HostAlloc(byte**, unsigned int)':
+FunctionsCuda.cpp:359:48: warning: 'hipError_t hipHostAlloc(void**, size_t, unsigned int)' is deprecated: use hipHostMalloc instead [-Wdeprecated-declarations]
+  359 |   size_t size=sizeof(byte)*count;  hipHostAlloc((void**)ptr,size,hipHostMallocDefault);  return(size);
+      |                                    ~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from FunctionsCuda.h:40,
+                 from FunctionsCuda.cpp:21:
+/opt/rocm/include/hip/hip_runtime_api.h:3439:12: note: declared here
+ 3439 | hipError_t hipHostAlloc(void** ptr, size_t size, unsigned int flags);
+      |            ^~~~~~~~~~~~
+FunctionsCuda.cpp: In function 'size_t fcuda::HostAlloc(word**, unsigned int)':
+FunctionsCuda.cpp:366:48: warning: 'hipError_t hipHostAlloc(void**, size_t, unsigned int)' is deprecated: use hipHostMalloc instead [-Wdeprecated-declarations]
+  366 |   size_t size=sizeof(word)*count;  hipHostAlloc((void**)ptr,size,hipHostMallocDefault);  return(size);
+      |                                    ~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/opt/rocm/include/hip/hip_runtime_api.h:3439:12: note: declared here
+ 3439 | hipError_t hipHostAlloc(void** ptr, size_t size, unsigned int flags);
+      |            ^~~~~~~~~~~~
+FunctionsCuda.cpp: In function 'size_t fcuda::HostAlloc(unsigned int**, unsigned int)':
+FunctionsCuda.cpp:373:52: warning: 'hipError_t hipHostAlloc(void**, size_t, unsigned int)' is deprecated: use hipHostMalloc instead [-Wdeprecated-declarations]
+  373 |   size_t size=sizeof(unsigned)*count;  hipHostAlloc((void**)ptr,size,hipHostMallocDefault);  return(size);
+      |                                        ~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/opt/rocm/include/hip/hip_runtime_api.h:3439:12: note: declared here
+ 3439 | hipError_t hipHostAlloc(void** ptr, size_t size, unsigned int flags);
+      |            ^~~~~~~~~~~~
+FunctionsCuda.cpp: In function 'size_t fcuda::HostAlloc(int**, unsigned int)':
+FunctionsCuda.cpp:380:47: warning: 'hipError_t hipHostAlloc(void**, size_t, unsigned int)' is deprecated: use hipHostMalloc instead [-Wdeprecated-declarations]
+  380 |   size_t size=sizeof(int)*count;  hipHostAlloc((void**)ptr,size,hipHostMallocDefault);  return(size);
+      |                                   ~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/opt/rocm/include/hip/hip_runtime_api.h:3439:12: note: declared here
+ 3439 | hipError_t hipHostAlloc(void** ptr, size_t size, unsigned int flags);
+      |            ^~~~~~~~~~~~
+FunctionsCuda.cpp: In function 'size_t fcuda::HostAlloc(int2**, unsigned int)':
+FunctionsCuda.cpp:387:48: warning: 'hipError_t hipHostAlloc(void**, size_t, unsigned int)' is deprecated: use hipHostMalloc instead [-Wdeprecated-declarations]
+  387 |   size_t size=sizeof(int2)*count;  hipHostAlloc((void**)ptr,size,hipHostMallocDefault);  return(size);
+      |                                    ~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/opt/rocm/include/hip/hip_runtime_api.h:3439:12: note: declared here
+ 3439 | hipError_t hipHostAlloc(void** ptr, size_t size, unsigned int flags);
+      |            ^~~~~~~~~~~~
+FunctionsCuda.cpp: In function 'size_t fcuda::HostAlloc(float**, unsigned int)':
+FunctionsCuda.cpp:394:49: warning: 'hipError_t hipHostAlloc(void**, size_t, unsigned int)' is deprecated: use hipHostMalloc instead [-Wdeprecated-declarations]
+  394 |   size_t size=sizeof(float)*count;  hipHostAlloc((void**)ptr,size,hipHostMallocDefault);  return(size);
+      |                                     ~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/opt/rocm/include/hip/hip_runtime_api.h:3439:12: note: declared here
+ 3439 | hipError_t hipHostAlloc(void** ptr, size_t size, unsigned int flags);
+      |            ^~~~~~~~~~~~
+FunctionsCuda.cpp: In function 'size_t fcuda::HostAlloc(tfloat4**, unsigned int)':
+FunctionsCuda.cpp:401:51: warning: 'hipError_t hipHostAlloc(void**, size_t, unsigned int)' is deprecated: use hipHostMalloc instead [-Wdeprecated-declarations]
+  401 |   size_t size=sizeof(tfloat4)*count;  hipHostAlloc((void**)ptr,size,hipHostMallocDefault);  return(size);
+      |                                       ~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/opt/rocm/include/hip/hip_runtime_api.h:3439:12: note: declared here
+ 3439 | hipError_t hipHostAlloc(void** ptr, size_t size, unsigned int flags);
+      |            ^~~~~~~~~~~~
+FunctionsCuda.cpp: In function 'size_t fcuda::HostAlloc(double**, unsigned int)':
+FunctionsCuda.cpp:408:50: warning: 'hipError_t hipHostAlloc(void**, size_t, unsigned int)' is deprecated: use hipHostMalloc instead [-Wdeprecated-declarations]
+  408 |   size_t size=sizeof(double)*count;  hipHostAlloc((void**)ptr,size,hipHostMallocDefault);  return(size);
+      |                                      ~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/opt/rocm/include/hip/hip_runtime_api.h:3439:12: note: declared here
+ 3439 | hipError_t hipHostAlloc(void** ptr, size_t size, unsigned int flags);
+      |            ^~~~~~~~~~~~
+FunctionsCuda.cpp: In function 'size_t fcuda::HostAlloc(tdouble2**, unsigned int)':
+FunctionsCuda.cpp:415:52: warning: 'hipError_t hipHostAlloc(void**, size_t, unsigned int)' is deprecated: use hipHostMalloc instead [-Wdeprecated-declarations]
+  415 |   size_t size=sizeof(tdouble2)*count;  hipHostAlloc((void**)ptr,size,hipHostMallocDefault);  return(size);
+      |                                        ~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/opt/rocm/include/hip/hip_runtime_api.h:3439:12: note: declared here
+ 3439 | hipError_t hipHostAlloc(void** ptr, size_t size, unsigned int flags);
+      |            ^~~~~~~~~~~~
+make: *** [Makefile:126: FunctionsCuda.o] Error 1

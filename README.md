@@ -1,4 +1,4 @@
-# This branch is the effort to translate code to use HIP
+# This branch is the effort to translate DualSPHysics CUDA code to use HIP on AMD GPUs
 
 <h4 align="center"> This branch is an attempt to port DualSPHysics to <a href="https://rocm.docs.amd.com/projects/HIP/en/latest/" target="_blank">HIP</a> and run it on AMD GPUs.</h4>
 
@@ -23,8 +23,7 @@
 
 0. Load the needed modules. In our case:
 ```
-module load rocm/5.6.1
-module load craype-accel-amd-gfx90a
+source setEnv.sh
 ```
 
 1. Execute conversion command:
@@ -32,9 +31,29 @@ module load craype-accel-amd-gfx90a
 hipconvertinplace-perl.sh . 2>&1 | tee hipconvertinplace.out`
 ```
 As the command says, the screen output of the perl script has been saved to the `hipconvertinplace.out` file.
-All the origial files with modifications are kept inplace put with the added suffix: `.prehip`.
+All the original files with modifications are kept inplace put with the added suffix: `.prehip`.
 Files with now HIP content still kept the `.cu` extension.
 This conversion is still not functional, but a commit is done at this point.
+
+2. Adapt the `src/source/Makefile` (backup was manually created to `Makefile.prehip`)
+
+3. Compile attempts in a cycle of compilation and fixing
+Compile:
+```
+cd src/source/Makefile
+make 2>&1 | tee compile_01.log
+```
+Fix:
+Fix the compilation errors.
+A log of the code modification to fix allow to complete compilation has been recorded in file `fixesList.txt`
+
+4. Adapt the execution script to make use of the HIP binary:
+First change the permissions of the provided binary files:
+```
+chmod 755 bin/linux/*
+```
+Then run the script for the example. The script for testing the execution of the example with the HIP binary is:
+`examples/main/01_DamBreak/xCaseDambreak_AMD_linux64_GPU_CrayCluster.sh`
 
 # Note
 The rest of this document comes from the original readme file and has not been modified. So users need to read carefully and adapt instructions for the use of the code with HIP.

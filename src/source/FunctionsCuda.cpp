@@ -91,8 +91,11 @@ StGpuInfo GetCudaDeviceInfo(int gid){
   g.regsblock=deviceProp.regsPerBlock;
   g.maxthmp=deviceProp.maxThreadsPerMultiProcessor;
   g.maxthblock=deviceProp.maxThreadsPerBlock;
+#ifndef __HIP_PLATFORM_AMD__
+  // These properties are CUDA-specific and not available in HIP
   g.overlap=deviceProp.deviceOverlap;
   g.overlapcount=deviceProp.asyncEngineCount;
+#endif
   g.limitrun=deviceProp.kernelExecTimeoutEnabled;
   g.integrated=deviceProp.integrated;
   g.maphostmem=deviceProp.canMapHostMemory;
@@ -100,7 +103,10 @@ StGpuInfo GetCudaDeviceInfo(int gid){
 #if defined(WIN32) || defined(_WIN32) || defined(WIN64) || defined(_WIN64)
   g.tccdriver=deviceProp.tccDriver;
 #endif
-  g.uva=deviceProp.unifiedAddressing;
+#ifndef __HIP_PLATFORM_AMD__
+  // These properties are CUDA-specific and not available in HIP
+  g.uva=deviceProp.unifiedAddressing
+#endif
   g.pcidomain=deviceProp.pciDomainID;
   g.pcibus=deviceProp.pciBusID;
   g.pcidevice=deviceProp.pciDeviceID;
