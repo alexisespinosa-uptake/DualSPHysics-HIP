@@ -1,3 +1,4 @@
+#include "hip/hip_runtime.h"
 //HEAD_DSPH
 /*
 <DUALSPHYSICS>  Copyright (c) 2019 by Dr Jose M. Dominguez et al. (see http://dual.sphysics.org/index.php/developers/).
@@ -42,8 +43,8 @@ namespace cusphNN {
 /// Graba constantes para la interaccion a la GPU.
 //==============================================================================
 void CteInteractionUp_NN(unsigned phasecount,const StPhaseCte *phasecte,const StPhaseArray *phasearray) {
-  cudaMemcpyToSymbol(PHASECTE,phasecte,sizeof(StPhaseCte)*phasecount);
-  cudaMemcpyToSymbol(PHASEARRAY,phasearray,sizeof(StPhaseArray)*phasecount);
+  hipMemcpyToSymbol(HIP_SYMBOL(PHASECTE),phasecte,sizeof(StPhaseCte)*phasecount);
+  hipMemcpyToSymbol(HIP_SYMBOL(PHASEARRAY),phasearray,sizeof(StPhaseArray)*phasecount);
 }
 
 //------------------------------------------------------------------------------

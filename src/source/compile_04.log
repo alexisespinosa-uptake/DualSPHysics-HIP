@@ -1,0 +1,123 @@
+hipcc -c -O3 -D__HIP_PLATFORM_AMD__ -ffast-math JDsGauge_ker.cu
+In file included from JDsGauge_ker.cu:22:
+In file included from ./JDsGauge_ker.h:24:
+In file included from ./DualSphDef.h:24:
+./TypesDef.h:574:10: warning: enumeration values 'TypeNull' and 'TypeText' not handled in switch [-Wswitch]
+  switch(type){
+         ^~~~
+In file included from JDsGauge_ker.cu:22:
+In file included from ./JDsGauge_ker.h:24:
+In file included from ./DualSphDef.h:26:
+./JParticlesDef.h:54:10: warning: enumeration value 'TpPartUnknown' not handled in switch [-Wswitch]
+  switch(type){
+         ^~~~
+In file included from JDsGauge_ker.cu:22:
+In file included from ./JDsGauge_ker.h:24:
+./DualSphDef.h:485:10: warning: enumeration value 'CELLMODE_None' not handled in switch [-Wswitch]
+  switch(cellmode){
+         ^~~~~~~~
+3 warnings generated when compiling for gfx90a.
+In file included from JDsGauge_ker.cu:22:
+In file included from ./JDsGauge_ker.h:24:
+In file included from ./DualSphDef.h:24:
+./TypesDef.h:574:10: warning: enumeration values 'TypeNull' and 'TypeText' not handled in switch [-Wswitch]
+  switch(type){
+         ^~~~
+In file included from JDsGauge_ker.cu:22:
+In file included from ./JDsGauge_ker.h:24:
+In file included from ./DualSphDef.h:26:
+./JParticlesDef.h:54:10: warning: enumeration value 'TpPartUnknown' not handled in switch [-Wswitch]
+  switch(type){
+         ^~~~
+In file included from JDsGauge_ker.cu:22:
+In file included from ./JDsGauge_ker.h:24:
+./DualSphDef.h:485:10: warning: enumeration value 'CELLMODE_None' not handled in switch [-Wswitch]
+  switch(cellmode){
+         ^~~~~~~~
+3 warnings generated when compiling for host.
+hipcc -c -O3 -D__HIP_PLATFORM_AMD__ -ffast-math JReduSum_ker.cu
+In file included from JReduSum_ker.cu:23:
+In file included from ./Functions.h:113:
+./TypesDef.h:574:10: warning: enumeration values 'TypeNull' and 'TypeText' not handled in switch [-Wswitch]
+  switch(type){
+         ^~~~
+1 warning generated when compiling for gfx90a.
+In file included from JReduSum_ker.cu:23:
+In file included from ./Functions.h:113:
+./TypesDef.h:574:10: warning: enumeration values 'TypeNull' and 'TypeText' not handled in switch [-Wswitch]
+  switch(type){
+         ^~~~
+1 warning generated when compiling for host.
+hipcc -c -O3 -D__HIP_PLATFORM_AMD__ -ffast-math JSphShifting_ker.cu
+In file included from JSphShifting_ker.cu:22:
+In file included from ./JSphShifting_ker.h:31:
+./TypesDef.h:574:10: warning: enumeration values 'TypeNull' and 'TypeText' not handled in switch [-Wswitch]
+  switch(type){
+         ^~~~
+1 warning generated when compiling for gfx90a.
+In file included from JSphShifting_ker.cu:22:
+In file included from ./JSphShifting_ker.h:31:
+./TypesDef.h:574:10: warning: enumeration values 'TypeNull' and 'TypeText' not handled in switch [-Wswitch]
+  switch(type){
+         ^~~~
+1 warning generated when compiling for host.
+hipcc -c -O3 -D__HIP_PLATFORM_AMD__ -ffast-math JDsAccInput_ker.cu
+In file included from JDsAccInput_ker.cu:22:
+In file included from ./JDsAccInput_ker.h:31:
+In file included from ./DualSphDef.h:24:
+./TypesDef.h:574:10: warning: enumeration values 'TypeNull' and 'TypeText' not handled in switch [-Wswitch]
+  switch(type){
+         ^~~~
+In file included from JDsAccInput_ker.cu:22:
+In file included from ./JDsAccInput_ker.h:31:
+In file included from ./DualSphDef.h:26:
+./JParticlesDef.h:54:10: warning: enumeration value 'TpPartUnknown' not handled in switch [-Wswitch]
+  switch(type){
+         ^~~~
+In file included from JDsAccInput_ker.cu:22:
+In file included from ./JDsAccInput_ker.h:31:
+./DualSphDef.h:485:10: warning: enumeration value 'CELLMODE_None' not handled in switch [-Wswitch]
+  switch(cellmode){
+         ^~~~~~~~
+3 warnings generated when compiling for gfx90a.
+In file included from JDsAccInput_ker.cu:22:
+In file included from ./JDsAccInput_ker.h:31:
+In file included from ./DualSphDef.h:24:
+./TypesDef.h:574:10: warning: enumeration values 'TypeNull' and 'TypeText' not handled in switch [-Wswitch]
+  switch(type){
+         ^~~~
+In file included from JDsAccInput_ker.cu:22:
+In file included from ./JDsAccInput_ker.h:31:
+In file included from ./DualSphDef.h:26:
+./JParticlesDef.h:54:10: warning: enumeration value 'TpPartUnknown' not handled in switch [-Wswitch]
+  switch(type){
+         ^~~~
+In file included from JDsAccInput_ker.cu:22:
+In file included from ./JDsAccInput_ker.h:31:
+./DualSphDef.h:485:10: warning: enumeration value 'CELLMODE_None' not handled in switch [-Wswitch]
+  switch(cellmode){
+         ^~~~~~~~
+3 warnings generated when compiling for host.
+hipcc -c -O3 -D__HIP_PLATFORM_AMD__ -ffast-math JSphGpu_ker.cu
+In file included from JSphGpu_ker.cu:22:
+In file included from ./JSphGpu_ker.h:30:
+In file included from ./DualSphDef.h:24:
+./TypesDef.h:574:10: warning: enumeration values 'TypeNull' and 'TypeText' not handled in switch [-Wswitch]
+  switch(type){
+         ^~~~
+In file included from JSphGpu_ker.cu:22:
+In file included from ./JSphGpu_ker.h:30:
+In file included from ./DualSphDef.h:26:
+./JParticlesDef.h:54:10: warning: enumeration value 'TpPartUnknown' not handled in switch [-Wswitch]
+  switch(type){
+         ^~~~
+In file included from JSphGpu_ker.cu:22:
+In file included from ./JSphGpu_ker.h:30:
+./DualSphDef.h:485:10: warning: enumeration value 'CELLMODE_None' not handled in switch [-Wswitch]
+  switch(cellmode){
+         ^~~~~~~~
+JSphGpu_ker.cu:27:10: fatal error: 'math_constants.h' file not found
+#include <math_constants.h>
+         ^~~~~~~~~~~~~~~~~~
+3 warnings and 1 error generated when compiling for gfx90a.
+make: *** [Makefile:129: JSphGpu_ker.o] Error 1

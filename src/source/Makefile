@@ -1,4 +1,4 @@
-#DualSPHysics GPU/CPU v5.2.251 23-09-2022
+#DualSPHysics GPU/CPU v5.2.251 23-09-2022 (HIP on Cray Cluster with AMD GPUs)
 
 #=============== Compilation Options (YES/NO) ===============
 USE_DEBUG=NO
@@ -13,14 +13,14 @@ COMPILE_MOORDYN=YES
 LIBS_DIRECTORIES=-L./
 LIBS_DIRECTORIES:=$(LIBS_DIRECTORIES) -L../lib/linux_gcc
 
-EXECNAME=DualSPHysics5.2_linux64
+EXECNAME=DualSPHysics5.2Amd_linux64_CrayCluster
 EXECS_DIRECTORY=../../bin/linux
 
 # -std=c++0x ---> Used to avoid errors for calls to enums
 ifeq ($(USE_DEBUG), YES)
-  CCFLAGS=-c -O0 -g -Wall -fopenmp -D_WITHGPU -std=c++0x
+  CCFLAGS=-c -O0 -g -Wall -fopenmp -D_WITHGPU -std=c++0x -D__HIP_PLATFORM_AMD__
 else
-  CCFLAGS=-c -O3 -fopenmp -D_WITHGPU -std=c++0x
+  CCFLAGS=-c -O3 -fopenmp -D_WITHGPU -std=c++0x -D__HIP_PLATFORM_AMD__
   ifeq ($(USE_FAST_MATH), YES)
     CCFLAGS+= -ffast-math
   endif
@@ -28,7 +28,8 @@ else
     CCFLAGS+= -march=native
   endif
 endif
-CC=g++
+#CC=g++
+CC=CC #Using the cray cluster wrapper for c++ compiler
 CCLINKFLAGS=-fopenmp -lgomp
 
 ifeq ($(COMPILE_VTKLIB), NO)
@@ -45,66 +46,6 @@ ifeq ($(COMPILE_WAVEGEN), NO)
 endif
 ifeq ($(COMPILE_MOORDYN), NO)
   CCFLAGS:=$(CCFLAGS) -DDISABLE_MOORDYN
-endif
-
-#=============== CUDA selection ===============
-CUDAVER=11
-
-#=============== CUDA toolkit directory (make appropriate for local CUDA installation) ===============
-ifeq ($(CUDAVER),00)
-  DIRTOOLKIT=/usr/local/cuda
-endif
-ifeq ($(CUDAVER),75)
-  DIRTOOLKIT=/exports/opt/NVIDIA/cuda-7.5
-endif
-ifeq ($(CUDAVER),91)
-  DIRTOOLKIT=/exports/opt/NVIDIA/cuda-9.1
-endif
-ifeq ($(CUDAVER),92)
-  DIRTOOLKIT=/exports/opt/NVIDIA/cuda-9.2
-endif
-ifeq ($(CUDAVER),11)
-  DIRTOOLKIT=/exports/opt/NVIDIA/cuda-11.7
-endif
-
-#=============== Select GPU architectures ===============
-ifeq ($(CUDAVER),00)
-  GENCODE:=$(GENCODE) -gencode=arch=compute_20,code=\"sm_20,compute_20\"
-  GENCODE:=$(GENCODE) -gencode=arch=compute_30,code=\"sm_30,compute_30\"
-endif
-ifeq ($(CUDAVER),75)
-  GENCODE:=$(GENCODE) -gencode=arch=compute_20,code=\"sm_20,compute_20\"
-  GENCODE:=$(GENCODE) -gencode=arch=compute_30,code=\"sm_30,compute_30\"
-  GENCODE:=$(GENCODE) -gencode=arch=compute_35,code=\"sm_35,compute_35\"
-  GENCODE:=$(GENCODE) -gencode=arch=compute_37,code=\"sm_37,compute_37\"
-  GENCODE:=$(GENCODE) -gencode=arch=compute_50,code=\"sm_50,compute_50\"
-  GENCODE:=$(GENCODE) -gencode=arch=compute_52,code=\"sm_52,compute_52\"
-endif
-ifeq ($(CUDAVER),91)
-  GENCODE:=$(GENCODE) -gencode=arch=compute_30,code=\"sm_30,compute_30\"
-  GENCODE:=$(GENCODE) -gencode=arch=compute_35,code=\"sm_35,compute_35\"
-  GENCODE:=$(GENCODE) -gencode=arch=compute_50,code=\"sm_50,compute_50\"
-  GENCODE:=$(GENCODE) -gencode=arch=compute_52,code=\"sm_52,compute_52\"
-  GENCODE:=$(GENCODE) -gencode=arch=compute_61,code=\"sm_61,compute_61\"
-  GENCODE:=$(GENCODE) -gencode=arch=compute_70,code=\"sm_70,compute_70\"
-endif
-ifeq ($(CUDAVER),92)
-  # module load cuda/9.2
-  GENCODE:=$(GENCODE) -gencode=arch=compute_30,code=\"sm_30,compute_30\"
-  GENCODE:=$(GENCODE) -gencode=arch=compute_35,code=\"sm_35,compute_35\"
-  GENCODE:=$(GENCODE) -gencode=arch=compute_50,code=\"sm_50,compute_50\"
-  GENCODE:=$(GENCODE) -gencode=arch=compute_52,code=\"sm_52,compute_52\"
-  GENCODE:=$(GENCODE) -gencode=arch=compute_61,code=\"sm_61,compute_61\"
-  GENCODE:=$(GENCODE) -gencode=arch=compute_70,code=\"sm_70,compute_70\"
-endif
-ifeq ($(CUDAVER),11)
-  # module load cuda/11.7
-  # GENCODE:=$(GENCODE) -gencode=arch=compute_30,code=\"sm_30,compute_30\"
-  GENCODE:=$(GENCODE) -gencode=arch=compute_35,code=\"sm_35,compute_35\"
-  GENCODE:=$(GENCODE) -gencode=arch=compute_50,code=\"sm_50,compute_50\"
-  GENCODE:=$(GENCODE) -gencode=arch=compute_52,code=\"sm_52,compute_52\"
-  GENCODE:=$(GENCODE) -gencode=arch=compute_61,code=\"sm_61,compute_61\"
-  GENCODE:=$(GENCODE) -gencode=arch=compute_70,code=\"sm_70,compute_70\"
 endif
 
 #=============== Files to compile ===============
@@ -149,29 +90,33 @@ ifeq ($(COMPILE_MOORDYN), YES)
   JLIBS:=$(JLIBS) -ldsphmoordyn_64
 endif
 
+#=============== ROCm directory (make appropriate for local ROCm installation) ===============
+DIRTOOLKIT=$ROCM_PATH
+
 #=============== GPU Code Compilation ===============
 CCFLAGS := $(CCFLAGS) -I./ -I$(DIRTOOLKIT)/include
-CCLINKFLAGS := $(CCLINKFLAGS) -L$(DIRTOOLKIT)/lib64 -lcudart_static -ldl -lrt
-NCC=nvcc
+CCLINKFLAGS := $(CCLINKFLAGS) -L$(DIRTOOLKIT)/lib -L$(DIRTOOLKIT)/llvm/lib -lamdhip64 -ldl -lrt
+NCC=hipcc
 ifeq ($(USE_DEBUG), NO)
-  NCCFLAGS+=-c $(GENCODE) -O3 -ccbin $(CC)
+  NCCFLAGS+=-c -O3 -D__HIP_PLATFORM_AMD__
 else
-  NCCFLAGS+=-c $(GENCODE) -O0 -ccbin $(CC) -g
+  NCCFLAGS+=-c -O0 -g -D__HIP_PLATFORM_AMD__
 endif
 ifeq ($(USE_FAST_MATH), YES)
-  NCCFLAGS+= -use_fast_math
-endif
-ifeq ($(CUDAVER),11)	
-  NCCFLAGS+= -Wno-deprecated-gpu-targets
+  NCCFLAGS+= -ffast-math
 endif
 
+#=============== Targets ===============
 all:$(EXECS_DIRECTORY)/$(EXECNAME)
 	rm -rf *.o
 ifeq ($(USE_DEBUG), NO)
 	@echo "  --- Compiled Release GPU version ---"
+	mkdir -p $(EXECS_DIRECTORY)/AmdGpu
+	mv $(EXECS_DIRECTORY)/$(EXECNAME) $(EXECS_DIRECTORY)/AmdGpu
 else
 	@echo "  --- Compiled Debug GPU version ---"
-	mv $(EXECS_DIRECTORY)/$(EXECNAME) $(EXECNAME)_debug
+	mkdir -p $(EXECS_DIRECTORY)/AmdGpu
+	mv $(EXECS_DIRECTORY)/$(EXECNAME) $(EXECS_DIRECTORY)/AmdGpu/$(EXECNAME)_debug
 endif
 
 $(EXECS_DIRECTORY)/$(EXECNAME):  $(OBJECTS)

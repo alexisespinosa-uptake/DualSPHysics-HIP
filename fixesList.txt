@@ -1,0 +1,36 @@
+This is the list of fixes needed for the HIP port to compile.
+
+After compile_01.log:
+    File: FunctionsCuda.cpp
+    The following properties are not used when compiled with HIP: 
+        g.overlap=deviceProp.deviceOverlap;
+        g.overlapcount=deviceProp.asyncEngineCount;
+        g.uva=deviceProp.unifiedAddressing
+
+After compile_02.log:
+    File: JDsPips_ker.cu
+    The following inclusion is not used when compiled with HIP:
+        #include <math_constants.h>
+        (No additional constants needed to be defined manually)
+
+After compile_03.log:
+    File: JDsGauge_ker.cu
+    The following inclusion is not used when compiled with HIP:
+        #include <math_constants.h>
+        (No additional constants needed to be defined manually)
+
+After compile_04.log:
+    File: JSphGpu_ker.cu
+    The following inclusion is not used when compiled with HIP:
+        #include <math_constants.h>
+        (No additional constants needed to be defined manually)
+
+After compile_05.log:
+    File: JSphGpu_InOut_iker.cu
+    The following inclusion is not used when compiled with HIP:
+        #include <math_constants.h>
+        (No additional constants needed to be defined manually)
+
+After compile_06.log: SUCCESS!
+    DamBreak example ran, using script: xCaseDambreak_AMD_linux64_GPU_CrayCluster.sh
+        which makes use of the binary: dualsphysicsgpu="${dirbin}/AmdGpu/DualSPHysics5.2Amd_linux64_CrayCluster"

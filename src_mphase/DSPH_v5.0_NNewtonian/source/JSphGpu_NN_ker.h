@@ -23,7 +23,7 @@ You should have received a copy of the GNU Lesser General Public License along w
 
 //#include "Types.h" //depriciated
 #include "DualSphDef.h"
-#include <cuda_runtime_api.h>
+#include <hip/hip_runtime_api.h>
 
 /// Implements a set of functions and CUDA kernels for InOut feature.
 namespace cusphNN {

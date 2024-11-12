@@ -1,3 +1,4 @@
+#include "hip/hip_runtime.h"
 //HEAD_DSPH
 /*
  <DUALSPHYSICS>  Copyright (c) 2020 by Dr Jose M. Dominguez et al. (see http://dual.sphysics.org/index.php/developers/). 
@@ -22,14 +23,21 @@
 #include "Functions.h"
 #include "FunctionsCuda.h"
 #include <float.h>
+#ifndef __HIP_PLATFORM_AMD__
 #include <math_constants.h>
+#else
+// HIP compilation: manually define any necessary constants like those in CUDA's math_constants.h
+//#define CUDART_PI_F 3.141592654f
+//#define CUDART_E_F 2.718281828f
+// Add any other constants as needed
+#endif
 //:#include "JDgKerPrint.h"
 //:#include "JDgKerPrint_ker.h"
 #include <cstdio>
 #include <string>
 
 //#include "TypesDef.h"
-//#include <cuda_runtime_api.h>
+//#include <hip/hip_runtime_api.h>
 
 namespace cugauge{
 #include "FunctionsBasic_iker.h"

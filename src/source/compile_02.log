@@ -1,0 +1,177 @@
+CC  -c -O3 -fopenmp -D_WITHGPU -std=c++0x -D__HIP_PLATFORM_AMD__ -ffast-math -I./ -IOCM_PATH/include FunctionsCuda.cpp 
+FunctionsCuda.cpp: In function 'size_t fcuda::HostAlloc(byte**, unsigned int)':
+FunctionsCuda.cpp:365:48: warning: 'hipError_t hipHostAlloc(void**, size_t, unsigned int)' is deprecated: use hipHostMalloc instead [-Wdeprecated-declarations]
+  365 |   size_t size=sizeof(byte)*count;  hipHostAlloc((void**)ptr,size,hipHostMallocDefault);  return(size);
+      |                                    ~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from FunctionsCuda.h:40,
+                 from FunctionsCuda.cpp:21:
+/opt/rocm/include/hip/hip_runtime_api.h:3439:12: note: declared here
+ 3439 | hipError_t hipHostAlloc(void** ptr, size_t size, unsigned int flags);
+      |            ^~~~~~~~~~~~
+FunctionsCuda.cpp: In function 'size_t fcuda::HostAlloc(word**, unsigned int)':
+FunctionsCuda.cpp:372:48: warning: 'hipError_t hipHostAlloc(void**, size_t, unsigned int)' is deprecated: use hipHostMalloc instead [-Wdeprecated-declarations]
+  372 |   size_t size=sizeof(word)*count;  hipHostAlloc((void**)ptr,size,hipHostMallocDefault);  return(size);
+      |                                    ~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/opt/rocm/include/hip/hip_runtime_api.h:3439:12: note: declared here
+ 3439 | hipError_t hipHostAlloc(void** ptr, size_t size, unsigned int flags);
+      |            ^~~~~~~~~~~~
+FunctionsCuda.cpp: In function 'size_t fcuda::HostAlloc(unsigned int**, unsigned int)':
+FunctionsCuda.cpp:379:52: warning: 'hipError_t hipHostAlloc(void**, size_t, unsigned int)' is deprecated: use hipHostMalloc instead [-Wdeprecated-declarations]
+  379 |   size_t size=sizeof(unsigned)*count;  hipHostAlloc((void**)ptr,size,hipHostMallocDefault);  return(size);
+      |                                        ~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/opt/rocm/include/hip/hip_runtime_api.h:3439:12: note: declared here
+ 3439 | hipError_t hipHostAlloc(void** ptr, size_t size, unsigned int flags);
+      |            ^~~~~~~~~~~~
+FunctionsCuda.cpp: In function 'size_t fcuda::HostAlloc(int**, unsigned int)':
+FunctionsCuda.cpp:386:47: warning: 'hipError_t hipHostAlloc(void**, size_t, unsigned int)' is deprecated: use hipHostMalloc instead [-Wdeprecated-declarations]
+  386 |   size_t size=sizeof(int)*count;  hipHostAlloc((void**)ptr,size,hipHostMallocDefault);  return(size);
+      |                                   ~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/opt/rocm/include/hip/hip_runtime_api.h:3439:12: note: declared here
+ 3439 | hipError_t hipHostAlloc(void** ptr, size_t size, unsigned int flags);
+      |            ^~~~~~~~~~~~
+FunctionsCuda.cpp: In function 'size_t fcuda::HostAlloc(int2**, unsigned int)':
+FunctionsCuda.cpp:393:48: warning: 'hipError_t hipHostAlloc(void**, size_t, unsigned int)' is deprecated: use hipHostMalloc instead [-Wdeprecated-declarations]
+  393 |   size_t size=sizeof(int2)*count;  hipHostAlloc((void**)ptr,size,hipHostMallocDefault);  return(size);
+      |                                    ~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/opt/rocm/include/hip/hip_runtime_api.h:3439:12: note: declared here
+ 3439 | hipError_t hipHostAlloc(void** ptr, size_t size, unsigned int flags);
+      |            ^~~~~~~~~~~~
+FunctionsCuda.cpp: In function 'size_t fcuda::HostAlloc(float**, unsigned int)':
+FunctionsCuda.cpp:400:49: warning: 'hipError_t hipHostAlloc(void**, size_t, unsigned int)' is deprecated: use hipHostMalloc instead [-Wdeprecated-declarations]
+  400 |   size_t size=sizeof(float)*count;  hipHostAlloc((void**)ptr,size,hipHostMallocDefault);  return(size);
+      |                                     ~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/opt/rocm/include/hip/hip_runtime_api.h:3439:12: note: declared here
+ 3439 | hipError_t hipHostAlloc(void** ptr, size_t size, unsigned int flags);
+      |            ^~~~~~~~~~~~
+FunctionsCuda.cpp: In function 'size_t fcuda::HostAlloc(tfloat4**, unsigned int)':
+FunctionsCuda.cpp:407:51: warning: 'hipError_t hipHostAlloc(void**, size_t, unsigned int)' is deprecated: use hipHostMalloc instead [-Wdeprecated-declarations]
+  407 |   size_t size=sizeof(tfloat4)*count;  hipHostAlloc((void**)ptr,size,hipHostMallocDefault);  return(size);
+      |                                       ~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/opt/rocm/include/hip/hip_runtime_api.h:3439:12: note: declared here
+ 3439 | hipError_t hipHostAlloc(void** ptr, size_t size, unsigned int flags);
+      |            ^~~~~~~~~~~~
+FunctionsCuda.cpp: In function 'size_t fcuda::HostAlloc(double**, unsigned int)':
+FunctionsCuda.cpp:414:50: warning: 'hipError_t hipHostAlloc(void**, size_t, unsigned int)' is deprecated: use hipHostMalloc instead [-Wdeprecated-declarations]
+  414 |   size_t size=sizeof(double)*count;  hipHostAlloc((void**)ptr,size,hipHostMallocDefault);  return(size);
+      |                                      ~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/opt/rocm/include/hip/hip_runtime_api.h:3439:12: note: declared here
+ 3439 | hipError_t hipHostAlloc(void** ptr, size_t size, unsigned int flags);
+      |            ^~~~~~~~~~~~
+FunctionsCuda.cpp: In function 'size_t fcuda::HostAlloc(tdouble2**, unsigned int)':
+FunctionsCuda.cpp:421:52: warning: 'hipError_t hipHostAlloc(void**, size_t, unsigned int)' is deprecated: use hipHostMalloc instead [-Wdeprecated-declarations]
+  421 |   size_t size=sizeof(tdouble2)*count;  hipHostAlloc((void**)ptr,size,hipHostMallocDefault);  return(size);
+      |                                        ~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/opt/rocm/include/hip/hip_runtime_api.h:3439:12: note: declared here
+ 3439 | hipError_t hipHostAlloc(void** ptr, size_t size, unsigned int flags);
+      |            ^~~~~~~~~~~~
+CC  -c -O3 -fopenmp -D_WITHGPU -std=c++0x -D__HIP_PLATFORM_AMD__ -ffast-math -I./ -IOCM_PATH/include JObjectGpu.cpp 
+CC  -c -O3 -fopenmp -D_WITHGPU -std=c++0x -D__HIP_PLATFORM_AMD__ -ffast-math -I./ -IOCM_PATH/include JArraysGpu.cpp 
+CC  -c -O3 -fopenmp -D_WITHGPU -std=c++0x -D__HIP_PLATFORM_AMD__ -ffast-math -I./ -IOCM_PATH/include JDebugSphGpu.cpp 
+CC  -c -O3 -fopenmp -D_WITHGPU -std=c++0x -D__HIP_PLATFORM_AMD__ -ffast-math -I./ -IOCM_PATH/include JCellDivGpu.cpp 
+CC  -c -O3 -fopenmp -D_WITHGPU -std=c++0x -D__HIP_PLATFORM_AMD__ -ffast-math -I./ -IOCM_PATH/include JSphGpu.cpp 
+CC  -c -O3 -fopenmp -D_WITHGPU -std=c++0x -D__HIP_PLATFORM_AMD__ -ffast-math -I./ -IOCM_PATH/include JDsGpuInfo.cpp 
+CC  -c -O3 -fopenmp -D_WITHGPU -std=c++0x -D__HIP_PLATFORM_AMD__ -ffast-math -I./ -IOCM_PATH/include JCellDivGpuSingle.cpp 
+CC  -c -O3 -fopenmp -D_WITHGPU -std=c++0x -D__HIP_PLATFORM_AMD__ -ffast-math -I./ -IOCM_PATH/include JSphGpuSingle.cpp 
+hipcc -c -O3 -D__HIP_PLATFORM_AMD__ -ffast-math JCellDivGpu_ker.cu
+In file included from JCellDivGpu_ker.cu:22:
+In file included from ./JCellDivGpu_ker.h:24:
+In file included from ./DualSphDef.h:24:
+./TypesDef.h:574:10: warning: enumeration values 'TypeNull' and 'TypeText' not handled in switch [-Wswitch]
+  switch(type){
+         ^~~~
+In file included from JCellDivGpu_ker.cu:22:
+In file included from ./JCellDivGpu_ker.h:24:
+In file included from ./DualSphDef.h:26:
+./JParticlesDef.h:54:10: warning: enumeration value 'TpPartUnknown' not handled in switch [-Wswitch]
+  switch(type){
+         ^~~~
+In file included from JCellDivGpu_ker.cu:22:
+In file included from ./JCellDivGpu_ker.h:24:
+./DualSphDef.h:485:10: warning: enumeration value 'CELLMODE_None' not handled in switch [-Wswitch]
+  switch(cellmode){
+         ^~~~~~~~
+3 warnings generated when compiling for gfx90a.
+In file included from JCellDivGpu_ker.cu:22:
+In file included from ./JCellDivGpu_ker.h:24:
+In file included from ./DualSphDef.h:24:
+./TypesDef.h:574:10: warning: enumeration values 'TypeNull' and 'TypeText' not handled in switch [-Wswitch]
+  switch(type){
+         ^~~~
+In file included from JCellDivGpu_ker.cu:22:
+In file included from ./JCellDivGpu_ker.h:24:
+In file included from ./DualSphDef.h:26:
+./JParticlesDef.h:54:10: warning: enumeration value 'TpPartUnknown' not handled in switch [-Wswitch]
+  switch(type){
+         ^~~~
+In file included from JCellDivGpu_ker.cu:22:
+In file included from ./JCellDivGpu_ker.h:24:
+./DualSphDef.h:485:10: warning: enumeration value 'CELLMODE_None' not handled in switch [-Wswitch]
+  switch(cellmode){
+         ^~~~~~~~
+3 warnings generated when compiling for host.
+hipcc -c -O3 -D__HIP_PLATFORM_AMD__ -ffast-math JCellDivGpuSingle_ker.cu
+In file included from JCellDivGpuSingle_ker.cu:22:
+In file included from ./JCellDivGpuSingle_ker.h:24:
+In file included from ./JCellDivGpu_ker.h:24:
+In file included from ./DualSphDef.h:24:
+./TypesDef.h:574:10: warning: enumeration values 'TypeNull' and 'TypeText' not handled in switch [-Wswitch]
+  switch(type){
+         ^~~~
+In file included from JCellDivGpuSingle_ker.cu:22:
+In file included from ./JCellDivGpuSingle_ker.h:24:
+In file included from ./JCellDivGpu_ker.h:24:
+In file included from ./DualSphDef.h:26:
+./JParticlesDef.h:54:10: warning: enumeration value 'TpPartUnknown' not handled in switch [-Wswitch]
+  switch(type){
+         ^~~~
+In file included from JCellDivGpuSingle_ker.cu:22:
+In file included from ./JCellDivGpuSingle_ker.h:24:
+In file included from ./JCellDivGpu_ker.h:24:
+./DualSphDef.h:485:10: warning: enumeration value 'CELLMODE_None' not handled in switch [-Wswitch]
+  switch(cellmode){
+         ^~~~~~~~
+3 warnings generated when compiling for gfx90a.
+In file included from JCellDivGpuSingle_ker.cu:22:
+In file included from ./JCellDivGpuSingle_ker.h:24:
+In file included from ./JCellDivGpu_ker.h:24:
+In file included from ./DualSphDef.h:24:
+./TypesDef.h:574:10: warning: enumeration values 'TypeNull' and 'TypeText' not handled in switch [-Wswitch]
+  switch(type){
+         ^~~~
+In file included from JCellDivGpuSingle_ker.cu:22:
+In file included from ./JCellDivGpuSingle_ker.h:24:
+In file included from ./JCellDivGpu_ker.h:24:
+In file included from ./DualSphDef.h:26:
+./JParticlesDef.h:54:10: warning: enumeration value 'TpPartUnknown' not handled in switch [-Wswitch]
+  switch(type){
+         ^~~~
+In file included from JCellDivGpuSingle_ker.cu:22:
+In file included from ./JCellDivGpuSingle_ker.h:24:
+In file included from ./JCellDivGpu_ker.h:24:
+./DualSphDef.h:485:10: warning: enumeration value 'CELLMODE_None' not handled in switch [-Wswitch]
+  switch(cellmode){
+         ^~~~~~~~
+3 warnings generated when compiling for host.
+hipcc -c -O3 -D__HIP_PLATFORM_AMD__ -ffast-math JDsPips_ker.cu
+In file included from JDsPips_ker.cu:22:
+In file included from ./JDsPips_ker.h:24:
+In file included from ./DualSphDef.h:24:
+./TypesDef.h:574:10: warning: enumeration values 'TypeNull' and 'TypeText' not handled in switch [-Wswitch]
+  switch(type){
+         ^~~~
+In file included from JDsPips_ker.cu:22:
+In file included from ./JDsPips_ker.h:24:
+In file included from ./DualSphDef.h:26:
+./JParticlesDef.h:54:10: warning: enumeration value 'TpPartUnknown' not handled in switch [-Wswitch]
+  switch(type){
+         ^~~~
+In file included from JDsPips_ker.cu:22:
+In file included from ./JDsPips_ker.h:24:
+./DualSphDef.h:485:10: warning: enumeration value 'CELLMODE_None' not handled in switch [-Wswitch]
+  switch(cellmode){
+         ^~~~~~~~
+JDsPips_ker.cu:24:10: fatal error: 'math_constants.h' file not found
+#include <math_constants.h>
+         ^~~~~~~~~~~~~~~~~~
+3 warnings and 1 error generated when compiling for gfx90a.
+make: *** [Makefile:147: JDsPips_ker.o] Error 1

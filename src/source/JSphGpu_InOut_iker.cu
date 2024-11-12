@@ -1,3 +1,4 @@
+#include "hip/hip_runtime.h"
 //HEAD_DSPH
 /*
  <DUALSPHYSICS>  Copyright (c) 2020 by Dr Jose M. Dominguez et al. (see http://dual.sphysics.org/index.php/developers/). 
@@ -22,7 +23,14 @@
 #include "Functions.h"
 #include "FunctionsCuda.h"
 #include <cfloat>
+#ifndef __HIP_PLATFORM_AMD__
 #include <math_constants.h>
+#else
+// HIP compilation: manually define any necessary constants like those in CUDA's math_constants.h
+//#define CUDART_PI_F 3.141592654f
+//#define CUDART_E_F 2.718281828f
+// Add any other constants as needed
+#endif
 
 namespace cusphinout{
 #include "FunctionsBasic_iker.h"
@@ -152,11 +160,11 @@ unsigned InOutCreateListSimple(bool stable,unsigned n,unsigned pini
   if(n){
     //-listp size list initialized to zero.
     //-Inicializa tamanho de lista listp a cero.
-    cudaMemset(listp+n,0,sizeof(unsigned));
+    hipMemset(listp+n,0,sizeof(unsigned));
     dim3 sgrid=GetSimpleGridSize(n,SPHBSIZE);
     const unsigned smem=(SPHBSIZE+1)*sizeof(unsigned); //-All fluid particles can be in in/out area and one position for counter.
     KerInOutCreateListSimple <<<sgrid,SPHBSIZE,smem>>> (n,pini,code,listp);
-    cudaMemcpy(&count,listp+n,sizeof(unsigned),cudaMemcpyDeviceToHost);
+    hipMemcpy(&count,listp+n,sizeof(unsigned),hipMemcpyDeviceToHost);
     //-Reorders list when stable has been activated.
     //-Reordena lista cuando stable esta activado.
     if(stable && count){ //-Does not affect results.
@@ -243,12 +251,12 @@ unsigned InOutCreateList(bool stable,unsigned n,unsigned pini
   if(n){
     //-listp size list initialized to zero.
     //-Inicializa tamanho de lista listp a cero.
-    cudaMemset(listp+n,0,sizeof(unsigned));
+    hipMemset(listp+n,0,sizeof(unsigned));
     dim3 sgrid=GetSimpleGridSize(n,SPHBSIZE);
     const unsigned smem=(SPHBSIZE+1)*sizeof(unsigned); //-All fluid particles can be in in/out area and one position for counter.
     KerInOutCreateList <<<sgrid,SPHBSIZE,smem>>> (n,pini,chkinputmask,nzone,cfgzone
       ,planes,Float3(freemin),Float3(freemax),boxlimit,posxy,posz,code,listp);
-    cudaMemcpy(&count,listp+n,sizeof(unsigned),cudaMemcpyDeviceToHost);
+    hipMemcpy(&count,listp+n,sizeof(unsigned),hipMemcpyDeviceToHost);
     //-Reorders list when stable has been activated.
     //-Reordena lista cuando stable esta activado.
     if(stable && count){ //-Does not affect results.
@@ -515,11 +523,11 @@ unsigned InOutListCreate(bool stable,unsigned n,unsigned nmax,const byte *newizo
   if(n){
     //-inoutpart size list initialized to zero.
     //-Inicializa tamanho de lista inoutpart a cero.
-    cudaMemset(inoutpart+nmax,0,sizeof(unsigned));
+    hipMemset(inoutpart+nmax,0,sizeof(unsigned));
     dim3 sgrid=GetSimpleGridSize(n,SPHBSIZE);
     const unsigned smem=(SPHBSIZE+1)*sizeof(unsigned); //-All fluid particles can be in in/out area and one position for counter.
     KerInOutListCreate <<<sgrid,SPHBSIZE,smem>>> (n,nmax,newizone,inoutpart);
-    cudaMemcpy(&count,inoutpart+nmax,sizeof(unsigned),cudaMemcpyDeviceToHost);
+    hipMemcpy(&count,inoutpart+nmax,sizeof(unsigned),hipMemcpyDeviceToHost);
     //-Reorders list if it is valid and stable has been activated.
     //-Reordena lista si es valida y stable esta activado.
     if(stable && count && count<=nmax){
@@ -734,13 +742,13 @@ unsigned InOutFillListCreate(bool stable,unsigned npt
   if(npt){
     //-inoutpart size list initialized to zero.
     //-Inicializa tamanho de lista inoutpart a cero.
-    cudaMemset(inoutpart+nmax,0,sizeof(unsigned));
+    hipMemset(inoutpart+nmax,0,sizeof(unsigned));
     dim3 sgrid=GetSimpleGridSize(npt,SPHBSIZE);
     const unsigned smem=(SPHBSIZE+1)*sizeof(unsigned); //-All fluid particles can be in in/out area and one position for counter.
     KerInOutFillListCreate <<<sgrid,SPHBSIZE,smem>>> (npt,ptposxy,ptposz,zsurfok
       ,ptzone,cfgupdate,zsurf,width,npropt,prodist,proposxy,proposz,dpmin,dpmin2
       ,dp,ptdist,nmax,inoutpart);
-    cudaMemcpy(&count,inoutpart+nmax,sizeof(unsigned),cudaMemcpyDeviceToHost);
+    hipMemcpy(&count,inoutpart+nmax,sizeof(unsigned),hipMemcpyDeviceToHost);
     //-Reorders list if it is valid and stable has been activated.
     //-Reordena lista si es valida y stable esta activado.
     if(stable && count && count<=nmax){
