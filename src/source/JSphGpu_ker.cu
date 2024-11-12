@@ -759,7 +759,7 @@ template<TpKernel tker,TpFtMode ftmode,bool lamsps,TpDensity tdensity,bool shift
 template<TpKernel tker,TpFtMode ftmode,bool lamsps,TpDensity tdensity,bool shift,bool symm> 
   void Interaction_ForcesT_KerInfo(StKerInfo *kerinfo)
 {
- #if CUDART_VERSION >= 6050
+ #if CUDART_VERSION >= 6050 || defined(__HIP_PLATFORM_AMD__)
   {
     typedef void (*fun_ptr)(unsigned,unsigned,float,float,int,int4,int3,const int2*,unsigned,const unsigned*,const float*,const float2*,float2*,const float3*,const float4*,const float4*,const typecode*,const unsigned*,float*,float*,float3*,float*,TpShifting,float4*);
     fun_ptr ptr=&KerInteractionForcesFluid<tker,ftmode,lamsps,tdensity,shift,symm>;
@@ -1469,7 +1469,7 @@ __global__ void KerInteractionForcesDem(unsigned nfloat
 //==============================================================================
 void Interaction_ForcesDemT_KerInfo(StKerInfo *kerinfo)
 {
-#if CUDART_VERSION >= 6050
+#if CUDART_VERSION >= 6050 || defined(__HIP_PLATFORM_AMD__)
   {
     typedef void (*fun_ptr)(unsigned,int,int4,int3,const int2*,unsigned,const unsigned*,const unsigned*,const float4*,const float*,float,const float4*,const float4*,const typecode*,const unsigned*,float*,float3*);
     fun_ptr ptr=&KerInteractionForcesDem;

@@ -81,7 +81,7 @@ StGpuInfo GetCudaDeviceInfo(int gid){
   g.coresmp=_ConvertSMVer2Cores(deviceProp.major,deviceProp.minor);
   g.cores=g.coresmp*g.mp;
   g.clockrate=deviceProp.clockRate;
-#if CUDART_VERSION >= 5000
+#if CUDART_VERSION >= 5000 || defined (__HIP_PLATFORM_AMD__)
   g.clockratemem=deviceProp.memoryClockRate;
   g.busmem=deviceProp.memoryBusWidth;
   g.cachelv2=deviceProp.l2CacheSize;
@@ -169,7 +169,7 @@ int GetCudaDevicesInfo(std::vector<std::string> *gpuinfo,std::vector<StGpuInfo> 
       gpuinfo->push_back(fun::PrintStr("  Global memory............: %.0f MBytes",(float)g.globalmem/1048576.0f));
       gpuinfo->push_back(fun::PrintStr("  CUDA Cores...............: %d (%2d Multiprocessors, %3d CUDA Cores/MP)",g.cores,g.mp,g.coresmp));
       gpuinfo->push_back(fun::PrintStr("  GPU Max Clock rate.......: %.0f MHz (%0.2f GHz)",1e-3f*g.clockrate,1e-6f*g.clockrate));
-#if CUDART_VERSION >= 5000
+#if CUDART_VERSION >= 5000 || defined (__HIP_PLATFORM_AMD__)
       gpuinfo->push_back(fun::PrintStr("  Memory Clock rate........: %.0f Mhz",1e-3f*g.clockratemem));
       gpuinfo->push_back(fun::PrintStr("  Memory Bus Width.........: %d-bit",g.busmem));
       gpuinfo->push_back(fun::PrintStr("  L2 Cache Size............: %.0f KBytes",(float)g.cachelv2/1024.f));

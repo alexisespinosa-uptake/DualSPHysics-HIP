@@ -31,6 +31,21 @@ After compile_05.log:
         #include <math_constants.h>
         (No additional constants needed to be defined manually)
 
-After compile_06.log: SUCCESS!
+After compile_06.log: FIRST SUCCESS! Code is running
     DamBreak example ran, using script: xCaseDambreak_AMD_linux64_GPU_CrayCluster.sh
         which makes use of the binary: dualsphysicsgpu="${dirbin}/AmdGpu/DualSPHysics5.2Amd_linux64_CrayCluster"
+
+----------------------
+From here, modifications are to improve code to better performance
+
+Improvement 1:
+    File: JSphGpu_ker.cu
+        Fixed function: Interaction_ForcesT_KerInfo, to provide kernel information with HIP.
+         Before the code was hidden inside an if CUDART_VERSION >=something.
+    File: FunctionsCuda.cpp
+        Fixed function: GetCudaDevicesInfo, to retrieve the properties that are inside
+         ifs CUDART_VERSION >= something.
+    Compilation log: compile_07.log
+
+
+
