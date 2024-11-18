@@ -19,14 +19,15 @@
 
 <h4 align="center"> The original DualSPHysics is a set of C++, <a href="https://developer.nvidia.com/cuda-zone" target="_blank">CUDA</a> and Java codes designed to deal with real-life engineering problems.</h4>
 
-# Procedure used for the translation from CUDA to HIP
+# Procedure that has been used for the translation from CUDA to HIP
+Note: This list of steps are presented here only to document what was done to HIPify the project. If you are cloning this repository to execute the HIP code, you won't need to follow these HIPification steps. For execution purposes, just go to the next section. 
 
-0. Load the needed modules. In our case:
+0. We loaded the needed modules/environment for the development cluster. Steps are already defined within the `setEnv.sh` script. So the environment was set with the following command:
 ```
 source setEnv.sh
 ```
 
-1. Execute conversion command:
+1. The next step was to execute conversion command:
 ```
 hipconvertinplace-perl.sh . 2>&1 | tee hipconvertinplace.out`
 ```
@@ -35,25 +36,61 @@ All the original files with modifications are kept inplace put with the added su
 Files with now HIP content still kept the `.cu` extension.
 This conversion is still not functional, but a commit is done at this point.
 
-2. Adapt the `src/source/Makefile` (backup was manually created to `Makefile.prehip`)
+2. Next, we adapted the `src/source/Makefile` (backup was manually created to `Makefile.prehip`)
 
-3. Compile attempts in a cycle of compilation and fixing
+3. Next, we compiled the code. But this procedure required a cycle of compile-fix-compile. This cycle was repeted several times:
 Compile:
 ```
 cd src/source/Makefile
 make 2>&1 | tee compile_01.log
 ```
 Fix:
-Fix the compilation errors.
-A log of the code modification to fix allow to complete compilation has been recorded in file `fixesList.txt`
+Edit the source code to fix the errors reported during the previous compilation.
+A log of the source code modification to fix the reported errors was recorded in file `fixesList.txt`
+When a source file (like `name.cu`) needed a fix, the "original" file was backed-up into a file with the same name plus `.prefix` at the end of the name. For example: `name.cu.prefix`.
 
-4. Adapt the execution script to make use of the HIP binary:
-First change the permissions of the provided binary files:
+4. Once compilation finalised successfully. We adapted the example execution script to make use of the HIP binary: `examples/main/01_DamBreak/xCaseDambreak_AMD_linux64_GPU_CrayCluster.sh`. (Note: the current script runs the solver, but is avoiding the execution of all the postprocessing steps as these have not been fully explored and translated to AMD GPUs. Check the comments after the key word `Original` within the script.)
+
+For the tools in the script to work, we changed the permissions of the provided binaries that come with the original repo:
 ```
 chmod 755 bin/linux/*
 ```
-Then run the script for the example. The script for testing the execution of the example with the HIP binary is:
-`examples/main/01_DamBreak/xCaseDambreak_AMD_linux64_GPU_CrayCluster.sh`
+
+To run the example:
+```
+cd examples/main/01_DamBreak/
+./xCaseDambreak_AMD_linux64_GPU_CrayCluster.sh
+```
+
+# To run the example
+
+0. Load the needed modules/environment for the development cluster. Steps are already defined within the `setEnv.sh` script. So the environment was set with the following command:
+```
+source setEnv.sh
+```
+You will need to add the evironment setting for your own cluster.
+
+1. Compile the code. 
+Compile:
+```
+cd src/source/Makefile
+make
+```
+
+2. Run the example. We adapted the example execution script to make use of the HIP binary: `examples/main/01_DamBreak/xCaseDambreak_AMD_linux64_GPU_CrayCluster.sh`. (Note: the current script runs the solver, but is avoiding the execution of all the postprocessing steps as these have not been fully explored and translated to AMD GPUs. Check the comments after the key word `Original` within the script.)
+
+For the tools in the script to work, you need to change the permissions of the provided binaries that come with the original repo:
+```
+chmod 755 bin/linux/*
+```
+
+To run the example:
+```
+cd examples/main/01_DamBreak/
+./xCaseDambreak_AMD_linux64_GPU_CrayCluster.sh
+```
+
+
 
 # Note
 The rest of this document comes from the original readme file and has not been modified. So users need to read carefully and adapt instructions for the use of the code with HIP.
