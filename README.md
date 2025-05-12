@@ -90,7 +90,11 @@ cd examples/main/01_DamBreak/
 ./xCaseDambreak_AMD_linux64_GPU_CrayCluster.sh
 ```
 
+# Working versions
 
+The following tags used to work in an Cray-HPE EX with AMD MI250X GPUs (Setonix)
+
+- v5.2-hip-working-notoptimized (compiled with rocm/5.6.1)
 
 # Note
 The rest of this document comes from the original readme file and has not been modified. So users need to read carefully and adapt instructions for the use of the code with HIP.
