@@ -22,3 +22,7 @@ bin/windows/*.exp
 
 ## Ignores the recently created binary
 bin/linux/AmdGpu/
+
+## Ignores object files and logs
+*.o
+*.log
